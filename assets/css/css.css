@@ -1,0 +1,178 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 17/06/2019, 11:02:03 AM
+    Author     : kc
+*/
+/*css switch*/
+input.a {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  }
+
+  label.h {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 480px;
+  height: 34px;
+  background: #ca2222;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  }
+
+  label.h:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 90px;
+  transition: .4s;
+  }
+
+  .a:checked + label.h {
+  background: #2ab934;
+  }
+
+  .a:checked + label.h:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+  }
+
+    label.h:active:after {
+  width: 130px;
+  }
+
+  /*------ ADDED CSS ---------*/
+  .on
+  {
+    display: none;
+  }
+
+  .on, .off
+  {
+    color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+  }
+
+  .a:checked+ .slider .on
+  {display: block;}
+
+  .a:checked + .slider .off
+  {display: none;}
+
+  /*--------- END --------*/
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;}
+
+    .pt-3-half {
+    padding-top: 1.4rem;
+    }
+
+/*fin css switch*/
+.scroll {
+    max-height: 655px;
+    overflow-y: auto;
+}
+.pull-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .pull-center {
+    float: right;
+  }
+}
+
+@media (max-width: 767px) {
+    .column {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .column {
+        width: 50%;
+        height: 50%;
+    }
+}
+@media (min-width: 1025px) {
+    .column {
+        width: 25%;
+        height: 25%;
+    }
+}
+a.act{
+  font-size:small;
+  color: #a94442;
+  border-color: #ebccd1;
+}
+label.error {
+    height:17px;
+    border-top:1px;
+    border-right:1px;
+    border-bottom:1px;
+    margin-left:9px;
+    padding:1px 5px 0px 5px;
+    font-size:small;
+    color: #a94442;
+    border-color: #ebccd1;
+}
+
+input.resaltado {
+  font-weight:bold;
+}
+.select-css {
+    display: block;
+    color: #3E4551;
+
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%;
+    height: 51%;
+    max-height: 51%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #bdbdbd;
+
+    border-radius: 5px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+.select-css::-ms-expand {
+    display: none;
+}
+
+.select-css:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+}
+.select-css option {
+    font-family: sans-serif;
+    font-weight:normal;
+}

@@ -1,0 +1,206 @@
+/* Estilo para poner borde de colo a un div */
+.h{
+	background-color: blue;
+}
+.h2{
+	background-color: orange;
+}
+
+.rotateMe {
+	-webkit-transition: -webkit-transform 0.5s ease-out;
+	-moz-transition: -moz-transform 0.5s ease-out;
+	transition: transform 0.5s ease-out;
+}
+.rotateMe:hover {
+ -webkit-transform: rotate(90deg);
+ -moz-transform: rotate(90deg);
+ transform: rotate(90deg);
+}
+
+.telcel:hover{
+	-webkit-box-shadow: 0px 0px 15px 5px #0d47a1;
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.azteca:hover{
+	-webkit-box-shadow: 0px 0px 15px 5px #007E33;
+
+	border-radius: 32px 32px 32px 32px;
+	-moz-border-radius: 32px 32px 32px 32px;
+	-webkit-border-radius: 32px 32px 32px 32px;
+	border: 0px solid #000000;
+}
+.movistar:hover{
+	-webkit-box-shadow: 0px 0px 15px 5px #0099CC;
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.atnt:hover{
+	-webkit-box-shadow: 0px 0px 15px 5px #424242;
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.unefon:hover{
+	-webkit-box-shadow: 0px 0px 15px 5px #ffeb3b;
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.flashmobile:hover{
+	-webkit-box-shadow: 0px 0px 15px 5px #9c27b0;
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.virgin:hover{
+	-webkit-box-shadow: 0px 0px 15px 5px #CC0000;
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.alo:hover{
+	-webkit-box-shadow: 0px 0px 15px 5px #e65100;
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.cierto:hover{
+	-webkit-box-shadow: 0px 0px 15px 5px #ad1457;
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.tuenti:hover{
+	-webkit-box-shadow: 0px 0px 15px 5px #4285F4;
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+
+/* Estilo de imagen con bordes SI LO OCUPO*/
+.tel{
+	/*-webkit-box-shadow: 0px 0px 2px 4px #bdbdbd;*/
+	-webkit-box-shadow: 0 5px 10px 2px #757575;
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.at{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.mov{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.une{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.flash{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.vir{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.al{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.cie{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.tue{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+
+
+/* Estilo para el tamaño de un label*/
+.labelStyle {
+	text-align-last:left; font-size:25px;
+}
+
+/* Estilo para el tamaño de la letra de un input*/
+.inputStyle {
+	font-size:50px;
+	text-align:center;
+	font-weight:bold;
+}
+
+/* Estilo del select*/
+.select {
+	border: 1px solid #ccc;
+	width: 465px;
+	margin: 10px auto 10px;
+	font-size:47px;
+	color: #616161;
+	overflow: hidden;
+	background: #fff url("") no-repeat 100% center;
+}
+.select select {
+		padding: 5px 8px;
+		width: 130%;
+		border: none;
+		box-shadow: none;
+		background-color: red;
+		background-image: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+}
+
+
+@media screen and (max-width: 1080px) {
+	#monto { width: 100%; }
+	#monto_movistar { width: 100%; }
+	#monto_atnt { width: 100%; }
+	#monto_unefon { width: 100%; }
+	#monto_flashmobile { width: 100%; }
+	#monto_virgin { width: 100%; }
+	#monto_alo { width: 100%; }
+	#monto_cierto { width: 100%; }
+	#monto_tuenti { width: 100%; }
+}
