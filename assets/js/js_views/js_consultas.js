@@ -1,4 +1,4 @@
-/*  function get_Recargas(element){
+  function get_Recargas(element){
       //$('#contenedorConsulta').show();
       var Recarga = new Object();
       Recarga.fechai = $('input#btnfechai').val();
@@ -73,7 +73,7 @@
     $('div#contenedorConsulta').html(table);
 
     buscar_datos();
-  }*/
+  }
 
   //funciones recibir elementos para label - View Consultas
   function fechainicial(fechai,timei,resultado) {
@@ -97,7 +97,7 @@
 
 
   function recibir4(){
-    valor = $("select#selectStatus option:selected").text();
+    valor = $("select#selectStatus").val();
     $("input#btnStatus").val(valor);
 
     var opcion = $("input#btnStatus").val();
@@ -208,84 +208,3 @@ $(function() {
 
 
 });
-
-//******
-//******
-$("#btnStore").click(function() {
-  get_store("#selectStore");
-});
-
-$("#btnconsultar").click(function() {
-  get_request('#btnfechai','#btnfechaf','#selectStore','#selectStatus','#enternumber');
-});
-
-
-function get_store(Store) {  
-  var selStore;
-      selStore = Store;
-  $('#indicator').show();
-  
-  $.post('controller/Ajax_Web.php',
-    {
-      P: 'OPERADORES_APP'       
-    },
-    function(data, textStatus) {
-      renderStoreList(data,selStore);
-      $('#indicator').hide();
-    }, 
-    "json"    
-  );
-}
-function get_request(element) {  
-  var fechai = $('#btnfechai').val();
-  var fechaf = $('#btnfechaf').val();
-  var operador = $('#btnStore').val();
-  var estado = $('#selectStatus').val();
-  var numero = $('#enternumber').val();
-  
-  $('#indicator').show();
-  
-  $.post('controller/Ajax_Web.php',
-    {
-      P: 'RECARGAS-PR_APP',
-      num: numero,
-      op: operador,
-      res: estado,
-      f1: fechai,
-      f2: fechaf
-    },
-    function(data, textStatus) {
-      renderTableList(data);
-      $('#indicator').hide();
-    }, 
-    "json"    
-  );
-}
-
- function renderStoreList(jsonData,selStore) {
-    var selectStore;
-        selectStore=selStore;
-    var select;
-
-    console.log(jsonData);
-      $.each(jsonData, function (i, member) {
-      for (var i in member) {
-        select += '<option value="'+member[i]+'">'+member[i]+'</option>';          
-       }
-      });      
-
-    $(selectStore).html(select);
-  }
-
-function renderTableList(jsonData) {
-    var table = '<table cellspacing="0" width="100%" class="table table-striped table-bordered" id="recent-purchases-listing"><thead><tr><th scope="col">Fecha</th><th scope="col">Número</th><th scope="col">Monto</th><th scope="col">Folio</th><th scope="col">Compañia</th></tr></thead><tbody class="buscar">';
-
-    $.each( jsonData, function( index,member){
-      
-          table += '<td COLSPAN="5">'+member[0]+'</td>';
-      });
-
-    table += '</tbody></table>';
-
-    $('div#contenedorConsulta').html(table);
-  }

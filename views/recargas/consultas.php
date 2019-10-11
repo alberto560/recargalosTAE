@@ -67,7 +67,7 @@
                               </div>
                               <div class="col-12 col-md-2" data-step="7" data-intro="Agrergar numero para buscar">
                                 <center><b><label for="exampleForm2">Ingrese el número</label></b> </center>
-                                <input type="tel" onKeyPress="if(this.value.length==10) return false;" id="enternumber" name="enternumber" class="form-control">
+                                <input type="tel" onKeyPress="if(this.value.length==10) return false;" id="exampleForm2" class="form-control">
                               </div>
                               <br>
                               <div class="col-12 col-md-2" data-step="8" data-intro="Boton para realizar la busqueda y generar una tabla de resultados <img src='ayuda/sites/statics/css/images/img/ayu-tab.png' height='220' />">
@@ -95,9 +95,6 @@
             </div>
           </div>
         </center>
-        <div id="indicator" style="display: none; text-align: center;" class="loading_img">
-          <img src="assets/images/indicator.gif"/>
-        </div>
       <!--First Modal -->
       <div class="modal fade" id="modalfechai" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
       aria-hidden="true">
@@ -117,7 +114,7 @@
                     <div class="input-group date fechas" data-date="" data-date-format="yyyy-mm-dd"  data-link-format="yyyy-mm-dd">
                         <input type="text" onfocus="blur();" name="fechai" id="fechai" class="form-control" placeholder="Fecha inicial">
                         <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+    					          <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                     </div>
 
                   </div>
@@ -189,7 +186,11 @@
             </button>
           </div>
           <div class="modal-body">
-            <select class="custom-select" id="selectStore" name="selectStore">            
+            <select class="custom-select" id="selectStore" name="selectStore">
+              <option value="Centro">Centro</option>
+              <option value="TMAC">TMAC</option>
+              <option value="El paseo">El paseo</option>
+              <option value="Other Store">Other Store</option>
             </select>
           </div>
           <div class="modal-footer">
@@ -214,9 +215,9 @@
           </div>
           <div class="modal-body">
             <select class="custom-select" id="selectStatus" name="selectStatus">
-              <option value="TD">Todas</option>
-              <option value="ER">Fallidas</option>
-              <option value="OK">Exitosas</option>              
+              <option value="Fallidas">Fallidas</option>
+              <option value="Exitosas">Exitosas</option>
+              <option value="Todas">Todas</option>
             </select>
           </div>
           <div class="modal-footer">
