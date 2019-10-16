@@ -27,7 +27,7 @@
 			return json_encode($sentencia1);
 		}
 		function get_All1(){
-			$sentencia1 = array('TB_Estado' => array( array('0','NO SE ENCONTRARON REGISTROS EN ESTA FECHA edocue'), array('T','0') ));
+			$sentencia1 = array('TB_Estado' => array( array('0','NO SE ENCONTRARON REGISTROS EN ESTA FECHA'), array('T','0') ));
 			return json_encode($sentencia1);
 		}
 		//Bolsas
@@ -37,7 +37,7 @@
 			return json_encode($sentencia2);
 		}
 		function get_All2(){
-			$sentencia2 = array('TB_Estado' => array( array('0','NO SE ENCONTRARON REGISTROS EN ESTA FECHA edocue'), array('T','0') ));
+			$sentencia2 = array('TB_Estado' => array( array('0','NO SE ENCONTRARON REGISTROS EN ESTA FECHA'), array('T','0') ));
 			return json_encode($sentencia2);
 		}
 		//Cuenta
@@ -47,7 +47,7 @@
 			return json_encode($sentencia3);
 		}
 		function get_All3(){
-			$sentencia3 = array('TB_Estado' => array( array('0','NO SE ENCONTRARON REGISTROS EN ESTA FECHA edocue'), array('T','0') ));
+			$sentencia3 = array('TB_Estado' => array( array('0','NO SE ENCONTRARON REGISTROS EN ESTA FECHA'), array('T','0') ));
 			return json_encode($sentencia3);
 		}
 	}

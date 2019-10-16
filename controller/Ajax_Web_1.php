@@ -67,7 +67,7 @@
 	//Fin de estado de cuenta
 
 	if(!isset($_POST['P'])) {
-		print json_encode(0);
+		print json_encode(3);
 		return;
 	}
 
