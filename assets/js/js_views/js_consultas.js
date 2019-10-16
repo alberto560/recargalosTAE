@@ -220,31 +220,31 @@ $("#btnconsultar").click(function() {
 });
 
 
-function get_store(Store) {  
+function get_store(Store) {
   var selStore;
       selStore = Store;
   $('#indicator').show();
-  
+
   $.post('controller/Ajax_Web.php',
     {
-      P: 'OPERADORES_APP'       
+      P: 'OPERADORES_APP'
     },
     function(data, textStatus) {
       renderStoreList(data,selStore);
       $('#indicator').hide();
-    }, 
-    "json"    
+    },
+    "json"
   );
 }
-function get_request(element) {  
+function get_request(element) {
   var fechai = $('#btnfechai').val();
   var fechaf = $('#btnfechaf').val();
   var operador = $('#btnStore').val();
   var estado = $('#selectStatus').val();
   var numero = $('#enternumber').val();
-  
+
   $('#indicator').show();
-  
+
   $.post('controller/Ajax_Web.php',
     {
       P: 'RECARGAS-PR_APP',
@@ -257,8 +257,8 @@ function get_request(element) {
     function(data, textStatus) {
       renderTableList(data);
       $('#indicator').hide();
-    }, 
-    "json"    
+    },
+    "json"
   );
 }
 
@@ -270,9 +270,9 @@ function get_request(element) {
     console.log(jsonData);
       $.each(jsonData, function (i, member) {
       for (var i in member) {
-        select += '<option value="'+member[i]+'">'+member[i]+'</option>';          
+        select += '<option value="'+member[i]+'">'+member[i]+'</option>';
        }
-      });      
+      });
 
     $(selectStore).html(select);
   }
@@ -281,7 +281,7 @@ function renderTableList(jsonData) {
     var table = '<table cellspacing="0" width="100%" class="table table-striped table-bordered" id="recent-purchases-listing"><thead><tr><th scope="col">Fecha</th><th scope="col">Número</th><th scope="col">Monto</th><th scope="col">Folio</th><th scope="col">Compañia</th></tr></thead><tbody class="buscar">';
 
     $.each( jsonData, function( index,member){
-      
+
           table += '<td COLSPAN="5">'+member[0]+'</td>';
       });
 

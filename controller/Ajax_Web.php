@@ -28,11 +28,11 @@
 	}
 
 	switch($_POST['P']) {
-		case 'OPERADORES_APP':			
+		case 'OPERADORES_APP':
       		$consulta_Store->consultar();
-		break;	
-		case 'RECARGAS-PR_APP':			
+		break;
+		case 'RECARGAS-PR_APP':
       		$consulta_Store->consultar_all();
-		break;	
+		break;
 	}
 ?>

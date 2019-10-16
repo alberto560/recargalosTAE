@@ -189,7 +189,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <select class="custom-select" id="selectStore" name="selectStore">            
+            <select class="custom-select" id="selectStore" name="selectStore">
             </select>
           </div>
           <div class="modal-footer">
@@ -216,7 +216,7 @@
             <select class="custom-select" id="selectStatus" name="selectStatus">
               <option value="TD">Todas</option>
               <option value="ER">Fallidas</option>
-              <option value="OK">Exitosas</option>              
+              <option value="OK">Exitosas</option>
             </select>
           </div>
           <div class="modal-footer">

@@ -7,7 +7,7 @@
     <!--JQUERY-->
     <script type="text/javascript" src="assets/jquery/jquery-3.4.1.min.js"></script>
     <!--SCRIPT-->
-    <script type="text/javascript" src="assets/js/js_views/js_consultas.js"></script>
+    <script type="text/javascript" src="assets/js/js_views/js_edocuenta.js"></script>
     <script type="text/javascript" src="assets/bootstrap/js/bootstrap-clockpicker.min.js"></script>
     <script type="text/javascript" src="assets/bootstrap/js/bootstrap-datetimepicker.js"></script>
     <!-- Bootstrap tooltips -->
@@ -78,54 +78,16 @@
                     </div>
     	            </div>
                   <br>
+                  <br>
+                  <div class="row justify-content-md-center">
+                    <div id="contenedorConsulta" class="table-responsive col-12 col-md-10 ">
+
+                    </div>
+                  </div>
     	         </div>
     	      </div>
     	   </div>
          <!-- Termina div de los botones -->
-         <!-- Inicia tabla -->
-         <p />
-         <div id="tabla" class="grid-margin stretch-card table table-striped table-bordered" style="display:none">
-    	      <div class="card">
-    	         <div class="card-body">
-    	            <div class="col-12 text-center table-responsive">
-                    <table class="table table-striped table-bordered">
-                      <thead>
-                        <tr>
-                          <th class="text-center">Fecha</th>
-                          <th class="text-center">Referencia</th>
-                          <th class="text-center">Cargo</th>
-                          <th class="text-center">Abono</th>
-                          <th class="text-center">Saldo</th>
-                          <th class="text-center">Total cargo</th>
-                          <th class="text-center">Total abono</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="pt-3-half">2019-07-26</td>
-                          <td class="pt-3-half">0123456789</td>
-                          <td class="pt-3-half">1000</td>
-                          <td class="pt-3-half">2000</td>
-                          <td class="pt-3-half">3000</td>
-                          <td class="pt-3-half">2000</td>
-                          <td class="pt-3-half">3000</td>
-                        </tr>
-                        <tr>
-                          <td class="pt-3-half">2019-07-26</td>
-                          <td class="pt-3-half">0123456789</td>
-                          <td class="pt-3-half">1000</td>
-                          <td class="pt-3-half">2000</td>
-                          <td class="pt-3-half">3000</td>
-                          <td class="pt-3-half">2000</td>
-                          <td class="pt-3-half">3000</td>
-                        </tr>
-                      </tbody>
-                    </table>
-    	            </div>
-    	         </div>
-    	      </div>
-    	   </div>
-         <!-- Termina tabla -->
     	</div>
     </center>
     <!-- Modal local -->
@@ -142,9 +104,6 @@
         </div>
         <div class="modal-body">
           <select class="custom-select" id="selectLocal" name="selectLocal">
-              <option value="Miscelanea chuchita">Miscelanea chuchita</option>
-              <option value="Tienda paco">Tienda paco</option>
-              <option value="+ Barato">+ Barato</option>
           </select>
         </div>
         <div class="modal-footer">
@@ -170,8 +129,6 @@
         </div>
         <div class="modal-body">
           <select class="custom-select" id="selectBolsa" name="selectBolsa">
-              <option value="TAE">TAE</option>
-              <option value="P.SERVICIOS">P.SERVICIOS</option>
           </select>
         </div>
         <div class="modal-footer">
@@ -197,9 +154,6 @@
         </div>
         <div class="modal-body">
           <select class="custom-select" id="selectCuenta" name="selectCuenta">
-              <option value="TODOS">TODOS</option>
-              <option value="ABONOS">ABONOS</option>
-              <option value="RECARGAS">RECARGAS</option>
           </select>
         </div>
         <div class="modal-footer">
