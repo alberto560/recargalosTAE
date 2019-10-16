@@ -74,6 +74,7 @@ $(function () {
   //Method from get to date
   $('#misaldo').click(function(){
     fecha_saldo();
+    get_saldo();
   });
   //Method from return the views with Jquery
   $('#return_consultas').click(function(){
@@ -364,3 +365,25 @@ $(document).ready(function() {
     }
   }
 });
+//***
+//***
+//***
+//***
+//******
+
+
+function get_saldo() {  
+
+  $('#indicator').show();
+  
+  $.post('controller/Ajax_Web.php',
+    {
+      P: 'SALDO_APP'       
+    },
+    function(data, textStatus) {
+      //renderSaldoModal(data);
+      $('#indicator').hide();
+    }, 
+    "json"    
+  );
+}

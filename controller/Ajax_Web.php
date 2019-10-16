@@ -1,5 +1,6 @@
 <?php
 	include_once("../model/ConsultaProcesados.php");
+	include_once("../model/home.php");
 /**
  *
  */
@@ -28,11 +29,39 @@
 	}
 
 	switch($_POST['P']) {
-		case 'OPERADORES_APP':
+		case 'OPERADORES_APP':			
       		$consulta_Store->consultar();
-		break;
-		case 'RECARGAS-PR_APP':
+		break;	
+		case 'RECARGAS-PR_APP':			
       		$consulta_Store->consultar_all();
-		break;
+		break;	
 	}
+	//****
+	//****
+	//home***
+	class ajax_web_home
+	{
+	private $model;
+		function __construct()
+		{
+				$this->model = new home();
+		}
+		public function consulta_saldo(){
+		 $consulta= $this->model->get_saldo();
+	   	 echo $consulta;
+		}
+	}
+	$consulta_home= new ajax_web_home();
+
+	if(!isset($_POST['P'])) {
+		print json_encode(0);
+		return;
+	}
+
+	switch($_POST['P']) {
+		case 'SALDO_APP':			
+      		$consulta_home->consulta_saldo();
+		break;			
+	}
+	
 ?>
