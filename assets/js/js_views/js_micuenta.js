@@ -104,24 +104,24 @@ var mail;
       console.log(apellM);
 
       $.each(jsonData, function (i, member) {
-        noExt = member[3];
-      });
-      console.log(noExt);
-
-      $.each(jsonData, function (i, member) {
-        calle = member[4];
+        calle = member[3];
       });
       console.log(calle);
 
       $.each(jsonData, function (i, member) {
-        cp = member[5];
+        noExt = member[4];
       });
-      console.log(cp);
+      console.log(noExt);
 
       $.each(jsonData, function (i, member) {
-        col = member[6];
+        col = member[5];
       });
       console.log(col);
+
+      $.each(jsonData, function (i, member) {
+        cp = member[6];
+      });
+      console.log(cp);
 
       $.each(jsonData, function (i, member) {
         telf1 = member[7];
@@ -138,9 +138,20 @@ var mail;
       });
       console.log(mail);
 
+      var name_only = nom.substring(24);
+      console.log(name_only);
 
-    $("#inputName").html(nom);
-    $("#inputApaterno").html(apell);
+
+    $("#inputName").val(nom);
+    $("#inputApaterno").val(apell);
+    $("#inputAmaterno").val(apellM);
+    $("#inputNext").val(noExt);
+    $("#inputCalle").val(calle);
+    $("#inputCP").val(cp);
+    $("#inputColonia").val(col);
+    $("#inputTelC").val(telf1);
+    $("#inputTelf").val(telf2);
+    $("#inputEmail").val(mail);
     //$("#ModalSaldoTitle").html(title);
 
   }
