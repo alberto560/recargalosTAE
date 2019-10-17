@@ -127,7 +127,7 @@ var selStore1;
     selStore1 = Store1;
 $('#indicator1').show();
 
-$.post('controller/Ajax_Web_1.php',
+$.post('controller/Ajax_Web.php',
   {
     P: 'ESTADOCTA_APP'
   },
@@ -140,6 +140,7 @@ $.post('controller/Ajax_Web_1.php',
 }
 
 //bolsa
+/*
 function get_store2(Store2) {
 var selStore2;
     selStore2 = Store2;
@@ -172,7 +173,7 @@ $.post('controller/Ajax_Web_3.php',
   },
   "json"
 );
-}
+} */
 
 function get_request(element) {
 var fechai = $('#btnfechai').val();
@@ -182,14 +183,14 @@ var bolsa = $('#btnBolsa').val();
 var tipo = $('#btnCuenta').val();
 
 $('#indicator1').show();
-$('#indicator2').show();
-$('#indicator3').show();
+//$('#indicator2').show();
+//$('#indicator3').show();
 
-$.post('controller/Ajax_Web_1.php',
+$.post('controller/Ajax_Web.php',
   {
     P: 'ESTADOCTA_APP_New',
     cl: clave,
-    bolsa: bolsa,
+    bolsa: '2',//bolsa,
     tipo: tipo,
     f1: fechai,
     f2: fechaf
@@ -197,8 +198,8 @@ $.post('controller/Ajax_Web_1.php',
   function(data, textStatus) {
     renderTableList(data);
     $('#indicator1').hide();
-    $('#indicator2').hide();
-    $('#indicator3').hide();
+    //$('#indicator2').hide();
+    //$('#indicator3').hide();
   },
   "json"
 );

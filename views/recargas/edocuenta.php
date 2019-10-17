@@ -129,6 +129,7 @@
         </div>
         <div class="modal-body">
           <select class="custom-select" id="selectBolsa" name="selectBolsa">
+            <option value="Bolsa TAE">Bolsa TAE</option>
           </select>
         </div>
         <div class="modal-footer">
@@ -154,6 +155,9 @@
         </div>
         <div class="modal-body">
           <select class="custom-select" id="selectCuenta" name="selectCuenta">
+            <option value="TODO">TODO</option>
+            <option value="ABONOS">ABONOS</option>
+            <option value="RECARGAS">RECARGAS</option>
           </select>
         </div>
         <div class="modal-footer">
