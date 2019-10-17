@@ -106,7 +106,7 @@ recibir4();
 //******
 //******
 $("#btnLocal").click(function() {
-get_store("#selectLocal");
+get_store1("#selectLocal");
 });
 
 $("#btnBolsa").click(function() {
@@ -122,18 +122,18 @@ get_request('#btnfechai','#btnfechaf','#selectLocal','#selectBolsa','#selectCuen
 });
 
 
-function get_store(Store) {
-var selStore;
-    selStore = Store;
-$('#indicator').show();
+function get_store1(Store1) {
+var selStore1;
+    selStore1 = Store1;
+$('#indicator1').show();
 
 $.post('controller/Ajax_Web_1.php',
   {
     P: 'ESTADOCTA_APP'
   },
   function(data, textStatus) {
-    renderStoreList(data,selStore);
-    $('#indicator').hide();
+    renderStoreList(data,selStore1);
+    $('#indicator1').hide();
   },
   "json"
 );
@@ -145,7 +145,7 @@ var selStore2;
     selStore2 = Store2;
 $('#indicator2').show();
 
-$.post('controller/Ajax_Web_1.php',
+$.post('controller/Ajax_Web_2.php',
   {
     P: 'ESTADOCTA_APP'
   },
@@ -162,7 +162,7 @@ var selStore3;
     selStore3 = Store3;
 $('#indicator3').show();
 
-$.post('controller/Ajax_Web_1.php',
+$.post('controller/Ajax_Web_3.php',
   {
     P: 'ESTADOCTA_APP'
   },
@@ -181,7 +181,7 @@ var clave = $('#btnLocal').val();
 var bolsa = $('#btnBolsa').val();
 var tipo = $('#btnCuenta').val();
 
-$('#indicator').show();
+$('#indicator1').show();
 $('#indicator2').show();
 $('#indicator3').show();
 
@@ -196,7 +196,7 @@ $.post('controller/Ajax_Web_1.php',
   },
   function(data, textStatus) {
     renderTableList(data);
-    $('#indicator').hide();
+    $('#indicator1').hide();
     $('#indicator2').hide();
     $('#indicator3').hide();
   },
@@ -204,19 +204,19 @@ $.post('controller/Ajax_Web_1.php',
 );
 }
 
-function renderStoreList(jsonData,selStore) {
+function renderStoreList(jsonData,selStore1) {
   var selectLocal;
-      selectLocal=selStore;
-  var select;
+      selectLocal=selStore1;
+  var select1;
 
   console.log(jsonData);
     $.each(jsonData, function (i, member) {
     for (var i in member) {
-      select += '<option value="'+member[i]+'">'+member[i]+'</option>';
+      select1 += '<option value="'+member[i]+'">'+member[i]+'</option>';
      }
     });
 
-  $(selectLocal).html(select);
+  $(selectLocal).html(select1);
 }
 
 //Bolsa
@@ -251,6 +251,8 @@ function renderStoreList3(jsonData,selStore3) {
   $(selectCuenta).html(select3);
 }
 
+
+///TABLA
 function renderTableList(jsonData) {
   var table = '<table cellspacing="0" width="100%" class="table table-striped table-bordered" id="recent-purchases-listing"><thead><tr><th scope="col">Fecha</th><th scope="col">Referencia</th><th scope="col">Cargo</th><th scope="col">Folio</th><th scope="col">Abono</th><th scope="col">Saldo</th></tr></thead><tbody class="buscar">';
 

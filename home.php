@@ -7,6 +7,7 @@
 
   <script type="text/javascript" src="assets/jquery/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="assets/js/js_views/js_consultas.js"></script>
+  <script type="text/javascript" src="assets/js/js_views/js_edocuenta.js"></script>
   <script type="text/javascript" src="assets/js/js_views/js_home.js"></script>
   <script type="text/javascript" src="assets/js/js_views/js_recargas.js"></script>
   <script type="text/javascript" src="assets/js/js_views/js_env-rec.js"></script>

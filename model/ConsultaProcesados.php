@@ -30,6 +30,9 @@
 			$sentencia1 = array('TB_Estado' => array( array('0','NO SE ENCONTRARON REGISTROS EN ESTA FECHA'), array('T','0') ));
 			return json_encode($sentencia1);
 		}
+	}
+
+	class EstadoCuenta2 {
 		//Bolsas
 		function get_Bolsas()
 		{
@@ -40,6 +43,8 @@
 			$sentencia2 = array('TB_Estado' => array( array('0','NO SE ENCONTRARON REGISTROS EN ESTA FECHA'), array('T','0') ));
 			return json_encode($sentencia2);
 		}
+	}
+	class EstadoCuenta3 {
 		//Cuenta
 		function get_Cuentas()
 		{
@@ -50,11 +55,6 @@
 			$sentencia3 = array('TB_Estado' => array( array('0','NO SE ENCONTRARON REGISTROS EN ESTA FECHA'), array('T','0') ));
 			return json_encode($sentencia3);
 		}
-	}
-
-	class EstadoCuenta2 {
-	}
-	class EstadoCuenta3 {
 	}
 	//FIN DE LA PARTE DE LA VISTA DE ESTADO DE CUENTA
 ?>
