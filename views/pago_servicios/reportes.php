@@ -30,7 +30,7 @@
                 <div class="col-md-12 text-center">
                   <h2 class="mb-0">
                     <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <h4 style="text-align: center;"><b>Estado de Cuenta</b><i class="fa fa-down pull-right mdi mdi-arrow-down-drop-circle"></i></h4>
+                      <h5 style="text-align: center;"><b>Estado de Cuenta</b><i class="fa fa-down pull-right mdi mdi-arrow-down-drop-circle"></i></h5>
                     </a>
                   </h2>
                 </div>
@@ -91,11 +91,11 @@
               </div>
             </div>
             <div class="card-resp" style="border-radius: 32px 32px 32px 32px;">
-              <div class="card-header" id="headingTwo" data-step="8" data-intro="Pagos de procesados" style="padding: 4px; color:#0d47a1;background: #f3e5f5;border-radius: 32px 32px 32px 32px">
+              <div class="card-header heading" id="headingTwo" data-step="8" data-intro="Pagos de procesados" style="border-radius: 32px 32px 32px 32px">
                 <div class="col-md-12 text-center">
                   <h2 class="mb-0">
                     <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <h4 style="text-align: center;"><b>Pagos  Procesados</b><i class="fa fa-down pull-right mdi mdi-arrow-down-drop-circle"></i></h4>
+                      <h5 style="text-align: center;"><b>Pagos  Procesados</b><i class="fa fa-down pull-right mdi mdi-arrow-down-drop-circle"></i></h5>
                     </a>
                   </h2>
                 </div>

@@ -2,6 +2,7 @@
 	include_once("../model/ConsultaProcesados.php");
 	include_once("../model/home.php");
 	include_once("../model/EstadoCuenta.php");
+	include_once("../model/MiCuenta.php");
 /**
  *
  */
@@ -100,4 +101,29 @@
 		        break;
 	}
 	//Fin de estado de cuenta
+
+	class ajax_web_cuenta
+	{
+	private $model;
+		function __construct()
+		{
+				$this->model = new MiCuenta();
+		}
+		public function consulta_datos(){
+		 $consultac= $this->model->get_datos();
+	   	 echo $consultac;
+		}
+	}
+	$consulta_cuenta= new ajax_web_cuenta();
+
+	if(!isset($_POST['P'])) {
+		print json_encode(0);
+		return;
+	}
+
+	switch($_POST['P']) {
+		case 'USUARIO_FORM':
+      		$consulta_cuenta->consulta_datos();
+		break;
+	}
 ?>

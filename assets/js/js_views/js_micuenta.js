@@ -14,6 +14,12 @@ $(function() {
   validate_CTA("#modalpwd","#saveNewOp");
 });
 
+$(function(){
+  $('#misDatos').click(function(){
+    get_datos();
+  });
+});
+
 function myFunction(){
   Swal.mixin({
   input: 'password',
@@ -51,3 +57,90 @@ $('#edita').click(function(){
   $('#lblOp').replaceWith('<label id="lblOp" for="nameOperator" style="display: none;" disabled> Nombre Operador</label>');
   $('#nameOperator').replaceWith('<input type="text" class="form-control" id="nameOperator" placeholder="Nombre de Operador" style="display:none;" disabled>');
 });
+
+
+
+function get_datos() {
+
+  $('#proces').show();
+
+  $.post('controller/Ajax_Web.php',
+    {
+      P: 'USUARIO_FORM'
+    },
+    function(data, textStatus) {
+      renderDatosForm(data);
+      $('#proces').hide();
+    },
+    "json"
+  );
+}
+
+function renderDatosForm(jsonData) {
+var nom;
+var apell;
+var apellM;
+var noExt
+var calle;
+var cp;
+var col;
+var telf1;
+var telf2;
+var mail;
+
+      $.each(jsonData, function (i, member) {
+        nom = member[0];
+      });
+      console.log(nom);
+
+      $.each(jsonData, function (i, member) {
+        apell = member[1];
+      });
+      console.log(apell);
+
+      $.each(jsonData, function (i, member) {
+        apellM = member[2];
+      });
+      console.log(apellM);
+
+      $.each(jsonData, function (i, member) {
+        noExt = member[3];
+      });
+      console.log(noExt);
+
+      $.each(jsonData, function (i, member) {
+        calle = member[4];
+      });
+      console.log(calle);
+
+      $.each(jsonData, function (i, member) {
+        cp = member[5];
+      });
+      console.log(cp);
+
+      $.each(jsonData, function (i, member) {
+        col = member[6];
+      });
+      console.log(col);
+
+      $.each(jsonData, function (i, member) {
+        telf1 = member[7];
+      });
+      console.log(telf1);
+
+      $.each(jsonData, function (i, member) {
+        telf2 = member[8];
+      });
+      console.log(telf2);
+
+      $.each(jsonData, function (i, member) {
+        mail = member[9];
+      });
+      console.log(mail);
+
+
+    $("#inputName").html(nom);
+    $("#inputApaterno").html(apell);
+    //$("#ModalSaldoTitle").html(title);
+
+  }
