@@ -1,5 +1,5 @@
 function fecha_saldo(){
-  var formattedDate = new Date();
+  /*var formattedDate = new Date();
   var d = formattedDate.getDate();
   var m =  formattedDate.getMonth();
       m += 1;  // JavaScript months are 0-11
@@ -11,7 +11,7 @@ function fecha_saldo(){
   }
   if (m<10) {
     m ="0"+m;
-  }
+  }*/
   $("#fechaH").text(d + "/" + m + "/" + y + " " + h + ":" + min);
 }
 function fechaLabelInicio(lblInicio) {
@@ -73,7 +73,7 @@ function ret_vistas(url,div){
 $(function () {
   //Method from get to date
   $('#misaldo').click(function(){
-    fecha_saldo();
+    //fecha_saldo();
     get_saldo();
   });
   //Method from return the views with Jquery
@@ -381,9 +381,35 @@ function get_saldo() {
       P: 'SALDO_APP'       
     },
     function(data, textStatus) {
-      //renderSaldoModal(data);
+      renderSaldoModal(data);
       $('#indicator').hide();
     }, 
     "json"    
   );
 }
+
+function renderSaldoModal(jsonData) {
+var saldo;
+var title;
+      $.each(jsonData, function (i, member) {
+        saldo = member[0];
+      });
+      console.log(saldo);
+
+      $.each(jsonData, function (i, member) {
+        title = member[1];
+      });
+      console.log(title);
+
+      var saldo_only = saldo.substring(24);
+      console.log(saldo_only);
+
+      var date_only = saldo.substring(0,24);
+      console.log(date_only);
+
+    
+    $("#fechaH").html("<h4><b>"+date_only+"</b></h4>"+"<br/><h1><b>"+saldo_only+"</b></h1>");
+    $("#ModalSaldoTitle").html(title);
+
+
+  }

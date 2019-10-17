@@ -334,32 +334,21 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
           <div class="modal-header blue-gradient color-block">
-            <h5 class="modal-title w-100 text-white font-weight-bold" id="exampleModalLongTitle">Mi Saldo</h5>
+            <h5 class="modal-title w-100 text-white font-weight-bold" id="ModalSaldoTitle">Mi Saldo</h5>
           </div>
           <div class="modal-body">
             <div class="row justify-content-center">
               <div class="col-7 col-md-6">
                 <center>
                 <label for="fechaH">Fecha y hora de consulta</label>
-                <b><label name="fechaH" id="fechaH"></label></b>
+                <b><label name="fechaH" id="fechaH" class='resaltado'></label></b>
                 </center>
               </div>
             </div>
             <br>
-            <div class="row justify-content-start">
-              <div class="col-12 col-md-6">
-                <center>
-                <label for="saldoTA">Saldo Disponible</label>
-                <h1><b><label id="saldo_disp" class="resaltado">$9999</label></b></h1>
-                </center>
-              </div>
-              <div class="col-12 col-md-6">
-                <center>
-                <label for="saldoDist">Saldo actual del distribuidor</label>
-                <h1><b><label id="saldo_distribuidor" class="resaltado">$99990</label></b></h1>
-                </center>
-              </div>
-            </div>
+          <div id="indicator" style="display: none; text-align: center;" class="loading_img">
+          <img src="assets/images/indicator.gif"/>
+          </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
