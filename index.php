@@ -80,7 +80,7 @@
   <script src="assets/js/template.js"></script>
   <!-- endinject -->
   <script type="text/javascript" src="assets/js/js_views/js_index.js"></script>
-
+  
 </body>
 
 </html>
