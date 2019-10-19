@@ -1,11 +1,15 @@
 <?php
 	include_once("../model/ConsultaProcesados.php");
-	include_once("../model/home.php");
+	include_once("../model/Home.php");
 	include_once("../model/EstadoCuenta.php");
 	include_once("../model/MiCuenta.php");
+	include_once("../model/Login.php");
 /**
  *
  */
+	//****
+	//****
+	//Consulta procesados
 	class ajax_web
 	{
 	private $model;
@@ -102,6 +106,9 @@
 	}
 	//Fin de estado de cuenta
 
+	//****
+	//****
+	//Estado de cuenta
 	class ajax_web_cuenta
 	{
 	private $model;
@@ -124,6 +131,34 @@
 	switch($_POST['P']) {
 		case 'USUARIO_FORM':
       		$consulta_cuenta->consulta_datos();
+		break;
+	}
+
+	//****
+	//****
+	//Login
+	class ajax_web_login
+	{	
+		private $model;
+		function __construct()
+		{
+			$this->model = new Login();
+		}
+		public function get_log(){
+		 $consulta= $this->model->get_login();
+	   	 echo $consulta;
+		}
+	}
+	$consulta_login= new ajax_web_login();
+
+	if(!isset($_POST['P'])) {
+		print json_encode(0);
+		return;
+	}
+
+	switch($_POST['P']) {
+		case 'LOGIN_APP':
+      		$consulta_login->get_log();
 		break;
 	}
 ?>
