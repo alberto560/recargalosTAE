@@ -39,7 +39,7 @@
                     </div>
                     <input type="text" class="form-control form-control-lg border-left-0" id="inputUser" placeholder="Usuario" required>
                   </div>
-                </div>
+                </div>                
                 <div class="form-group ">
                   <label for="exampleInputPassword">Contraseña:</label>
                   <div class="input-group ">
@@ -51,15 +51,19 @@
                     <input type="password" class="form-control form-control-lg border-left-0" id="inputPwd" placeholder="Contraseña" required>
                   </div>
                 </div>                
+                <!--<div class="my-3">
+                  <input type="button" id="btnLogin" name="btnLogin" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="INICIAR SESION">                  
+                </div>-->
                 <div class="my-3">
-                  <input type="button" id="btnLogin" name="btnLogin" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="INICIAR SESION">
+                  <a href="home.php" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" id="btnLogin" name="btnLogin">INICIAR SESION</a>
+                </div>
+                <div id="indicator" style="display: none; text-align: center;" class="loading_img">
+                  <img src="assets/images/indicator.gif"/>
                 </div>
               </form>
             </div>
           </div>
-          <div id="indicator" style="display: none; text-align: center;" class="loading_img">
-          <img src="assets/images/indicator.gif"/>
-          </div>
+          
           <div class="col-lg-6 login-half-bg d-flex flex-row">
             <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; 2019  All rights reserved. TMAC</p>
           </div>
