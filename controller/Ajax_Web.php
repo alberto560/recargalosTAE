@@ -4,6 +4,7 @@
 	include_once("../model/EstadoCuenta.php");
 	include_once("../model/MiCuenta.php");
 	include_once("../model/Login.php");
+	include_once("../model/Recarga.php");
 /**
  *
  */
@@ -138,7 +139,7 @@
 	//****
 	//Login
 	class ajax_web_login
-	{	
+	{
 		private $model;
 		function __construct()
 		{
@@ -161,4 +162,40 @@
       		$consulta_login->get_log();
 		break;
 	}
+
+	//****
+	//****
+	//Recargas
+	class ajax_web_recarga
+	{
+		private $model;
+				function __construct()
+				{
+					$this->model = new Recarga();
+				}
+				public function consultar1(){
+					$consulta1=$this->model->get_Compania();
+					echo $consulta1;
+				}
+				public function consultar_all1(){
+					$consulta1=$this->model->get_All1();
+					echo $consulta1;
+				}
+			}
+		  $consulta_Recarga = new ajax_web_recarga();
+
+			if(!isset($_POST['P'])) {
+				print json_encode(0);
+				return;
+			}
+
+	switch($_POST['P']) {
+		case 'RECARGA_APP':
+					$consulta_Recarga->consultar1();
+		        break;
+		case 'RECARGA_APP_New':
+					$consulta_Recarga->consultar_all1();
+		        break;
+	}
+	// Fin Recargas
 ?>

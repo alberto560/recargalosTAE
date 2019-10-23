@@ -159,6 +159,7 @@
             <option value="ABONOS">ABONOS</option>
             <option value="RECARGAS">RECARGAS</option>
           </select>
+          <!--input type="text" id="selectCuenta" name="selectCuenta" value=""-->
         </div>
         <div class="modal-footer">
           <button  class="btn btn-danger" data-dismiss="modal">Close</button>

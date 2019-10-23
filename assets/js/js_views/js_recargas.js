@@ -1,40 +1,49 @@
 $(function() {
     //change of images in only one modal
   $('#recTelcel').click(function(){
-  $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/telcel_b.png" class="img-fluid" alt="Responsive image">');
-  $('#compania').replaceWith('<input type="text" name="compania" id="compania" class="form-control" value="TELCEL" style="display: none" disabled>');
+    $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/telcel_b.png" class="img-fluid" alt="Responsive image">');
+    $('#c').replaceWith('<input type="text" name="c" id="c" class="form-control" value="1" style="display: none" disabled>');
+    $('#c1').replaceWith('<input type="text" name="c1" id="c1" class="form-control" value="TELCEL" style="display: none" disabled>');
   });
   $('#recMovistar').click(function(){
-  $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/mov_1.png" class="img-fluid" alt="Responsive image">');
-  $('#compania').replaceWith('<input type="text" name="compania" id="compania" class="form-control" value="MOVISTAR" style="display: none" disabled>');
+    $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/mov_1.png" class="img-fluid" alt="Responsive image">');
+    $('#c').replaceWith('<input type="text" name="c" id="c" class="form-control" value="2" style="display: none" disabled>');
+    $('#c1').replaceWith('<input type="text" name="c1" id="c1" class="form-control" value="MOVISTAR" style="display: none" disabled>');
   });
   $('#recAtnt').click(function(){
-  $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/att_2.png" class="img-fluid" alt="Responsive image">');
-  $('#compania').replaceWith('<input type="text" name="compania" id="compania" class="form-control" value="AT&T" style="display: none" disabled>');
+    $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/att_2.png" class="img-fluid" alt="Responsive image">');
+    $('#c').replaceWith('<input type="text" name="c" id="c" class="form-control" value="3" style="display: none" disabled>');
+    $('#c1').replaceWith('<input type="text" name="c1" id="c1" class="form-control" value="AT&T" style="display: none" disabled>');
   });
   $('#recUnefon').click(function(){
-  $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/une1.png" class="img-fluid" alt="Responsive image">');
-  $('#compania').replaceWith('<input type="text" name="compania" id="compania" class="form-control" value="UNEFON" style="display: none" disabled>');
+    $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/une1.png" class="img-fluid" alt="Responsive image">');
+    $('#c').replaceWith('<input type="text" name="c" id="c" class="form-control" value="4" style="display: none" disabled>');
+    $('#c1').replaceWith('<input type="text" name="c1" id="c1" class="form-control" value="UNEFON" style="display: none" disabled>');
   });
   $('#recFlashmobile').click(function(){
-  $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/flash.png" class="img-fluid" alt="Responsive image">');
-  $('#compania').replaceWith('<input type="text" name="compania" id="compania" class="form-control" value="FLASHMOBILE" style="display: none" disabled>');
+    $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/flash.png" class="img-fluid" alt="Responsive image">');
+    $('#c').replaceWith('<input type="text" name="c" id="c" class="form-control" value="11" style="display: none" disabled>');
+    $('#c1').replaceWith('<input type="text" name="c1" id="c1" class="form-control" value="FLASHMOBILE" style="display: none" disabled>');
   });
   $('#recVirgin').click(function(){
-  $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/vir1.png" class="img-fluid" alt="Responsive image">');
-  $('#compania').replaceWith('<input type="text" name="compania" id="compania" class="form-control" value="VIRGIN" style="display: none" disabled>');
+    $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/vir1.png" class="img-fluid" alt="Responsive image">');
+    $('#c').replaceWith('<input type="text" name="c" id="c" class="form-control" value="6" style="display: none" disabled>');
+    $('#c1').replaceWith('<input type="text" name="c1" id="c1" class="form-control" value="VIRGIN" style="display: none" disabled>');
   });
   $('#recAlo').click(function(){
-  $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/al.png" class="img-fluid" alt="Responsive image">');
-  $('#compania').replaceWith('<input type="text" name="compania" id="compania" class="form-control" value="ALO" style="display: none" disabled>');
+    $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/al.png" class="img-fluid" alt="Responsive image">');
+    $('#c').replaceWith('<input type="text" name="c" id="c" class="form-control" value="7" style="display: none" disabled>');
+    $('#c1').replaceWith('<input type="text" name="c1" id="c1" class="form-control" value="ALO" style="display: none" disabled>');
   });
   $('#recCierto').click(function(){
-  $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/cier.png" class="img-fluid" alt="Responsive image">');
-  $('#compania').replaceWith('<input type="text" name="compania" id="compania" class="form-control" value="CIERTO" style="display: none" disabled>');
+    $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/cier.png" class="img-fluid" alt="Responsive image">');
+    $('#c').replaceWith('<input type="text" name="c" id="c" class="form-control" value="9" style="display: none" disabled>');
+    $('#c1').replaceWith('<input type="text" name="c1" id="c1" class="form-control" value="CIERTO" style="display: none" disabled>');
   });
   $('#recTuenti').click(function(){
-  $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/tue.png" class="img-fluid" alt="Responsive image">');
-  $('#compania').replaceWith('<input type="text" name="compania" id="compania" class="form-control" value="TUENTI" style="display: none" disabled>');
+    $('#comp').replaceWith('<img id="comp" src="ayuda/sites/statics/css/images/img/tue.png" class="img-fluid" alt="Responsive image">');
+    $('#c').replaceWith('<input type="text" name="c" id="c" class="form-control" value="10" style="display: none" disabled>');
+    $('#c1').replaceWith('<input type="text" name="c1" id="c1" class="form-control" value="TUENTI" style="display: none" disabled>');
   });
 });
 //validacion del numero
@@ -107,8 +116,10 @@ $( function() {
 
 //Modal ConfirmacionPago
 $("#guardar0").click(function() {
-  var comp = $("#compania").val();
+  var comp = $("#c1").val();
   $("#lblcompania").text(comp);
+  var comp = $("#c").val();
+  $("#lblcompania1").text(comp);
   var num = $("#numero").val();
   $("#lblnumero").text(num);
   var mon = $("#monto").val();
@@ -116,7 +127,7 @@ $("#guardar0").click(function() {
 });
 //Fin modal de confirmacion
 
-//   limpiar modal telcel
+//   limpiar modal de recarga boton cancelar
 $("#btnCancelar").click(function(event) {
   $("#validacion")[0].reset();
   $("#adv_numero").css("display","none");
@@ -127,3 +138,125 @@ $("#btnCancelar").click(function(event) {
   $("#conf_monto").css('background', '#ffffff');
   $("#guardar0").prop("disabled", true);
 });
+//   limpiar modal de recarga botn procesar
+$("#btnProcesar").click(function(event) {
+  $("#validacion")[0].reset();
+  $("#adv_numero").css("display","none");
+  $("#numero").css('background', '#ffffff');
+  $("#adv").css("display","none");
+  $("#adv_monto").css('display', 'none');
+  $("#conf_monto").css('display', 'none');
+  $("#conf_monto").css('background', '#ffffff');
+  $("#guardar0").prop("disabled", true);
+});
+
+
+// ajax_web_recarga
+/*$("#guardar0").click(function(){
+  loguear1('#c','#numero','#monto');
+});*/
+$("#btnProcesar").click(function(){
+  recargas('#lblcompania1','#lblnumero','#lblmonto1');
+});
+
+function recargas(element) {
+/*var com = $('#c').val();
+var num = $('#numero').val();
+var mon = $('#monto').val();*/
+
+var com1 = $("#lblcompania1").text();
+var num1 = $("#lblnumero").text();
+var mon1 = $("#lblmonto1").text();
+
+$('#indicator1').show();
+
+$.post('controller/Ajax_Web.php',
+  {
+    P: 'RECARGA_APP',
+    c: com1,
+    numero: num1,//'2',//bolsa,
+    monto: mon1
+  },
+  function(data) {
+    //renderStoreList(data,selStore1);
+    $('#indicator1').hide();
+  },
+  "json"
+);
+}
+
+/*function get_request(element) {
+  var com = $('#c').val();
+  var num = $('#numero').val();
+  var mon = $('#monto').val();
+  $('#indicator1').show();
+
+  $.post('controller/Ajax_Web.php',
+    {
+      P: 'RECARGA_APP_New',
+      c: com,
+      numero: num,//'2',//bolsa,
+      monto: mon
+    },
+    function(data) {
+      //renderStoreList(data,selStore1);
+      $('#indicator1').hide();
+    },
+    "json"
+  );
+}
+
+ //ajax_web_recarga
+$("#btnProcesar").click(function() {
+	loguear('#c','#numero','#monto');
+	redirect();
+})
+
+function redirect(){
+  $.ajax({
+      type: "POST",
+      url: "home.php",
+      success: function(response) {
+          $('#toHome1').html(response);
+      }
+  });
+
+  function loguear(element) {
+  	var compania = $('#c').val();
+  	 var numero = $('#numero').val();
+    	var monto = $('#monto').val();
+  	$('#indicator').show();
+
+    $.post('controller/Ajax_Web.php',
+      {
+        P: 'RECARGA_APP',
+        c:compania,
+        numero:numero,
+        monto:monto,
+      },
+      function(data) {
+        $('#indicator').hide();
+      },
+      "json"
+    );
+  }
+} */
+//
+function fun() {
+  Swal.fire({
+  type: 'error',
+  title: '!Formato de Telefono invalido!',
+  width: 610,
+  padding: '6em',
+  background: '#fff',
+  backdrop: `
+    rgba(0, 136, 255, 0.58)
+    center left
+    no-repeat
+  `,
+  showConfirmButton: false,
+  timer: 1500
+
+})
+}
+//

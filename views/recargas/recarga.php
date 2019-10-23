@@ -179,14 +179,15 @@
                              <label for="contenido" id="adv_monto" style="display: none; font-size:25px;">Confirmar Cantidad:</label>
                              <input type="tel" name="conf_monto" id="conf_monto" class="form-control" style="font-size:47px; text-align:center; font-weight:bold; display:none;" onKeyPress="if(this.value.length==3) return false;" placeholder="Ingrese el monto">
                              <p align="left" id="adv" font="em"><em></em></p>
-                             <input id="compania">
+                             <input id="c">
+                             <input id="c1">
                              <p></p>
                            </div>
                          </form>
                        </div>
                        <div class="modal-footer">
                          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal" id="btnCancelar">Cerrar</button>
-                         <button type="button" id="guardar0" class="btn btn-primary btn-sm" data-toggle="modal" data-dismiss="modal" href="#modalConfPagoRecarga" disabled>Recargar</button>
+                         <button type="button" id="guardar0" class="btn btn-primary btn-sm" data-toggle="modal" data-dismiss="modal" href="#modalConfPagoRecarga" disabled>Confirmar</button>
                        </div>
                      </div>
                    </div>
@@ -257,6 +258,7 @@
                          <div class="col-12 col-md-12">
                            <p>Compañia</p>
                            <h1><label id="lblcompania"></label></h1>
+                           <h1><label id="lblcompania1" style="display: none" disabled>'></label></h1>
                            <p>Se realizará una recarga al número</p>
                            <h1><label id="lblnumero"></label></h1>
                            <p>Por la cantidad de</p>
@@ -267,8 +269,8 @@
                        </div>
                      </div>
                      <div class="modal-footer">
-                       <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" href="#modal_recarga">Cancelar</button>
-                       <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar</button>
+                       <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" href="#modal_recarga">Corregir</button>
+                       <button type="button" class="btn btn-primary" onclick="fun()" data-dismiss="modal" id="btnProcesar">Procesar</button>
                      </div>
                    </div>
                  </div>
