@@ -16,6 +16,10 @@
   <script type="text/javascript" src="assets/js/validate/validate1.19.1.js"></script>
   <script type="text/javascript" src="assets/js/validate/validate_rules.js"></script>
 
+  <!--JS ORDER MAS USADOS-->
+   <script type="text/javascript" src="assets/js/order/tinysort.js"></script>
+  <script type="text/javascript" src="assets/js/order/order.js"></script>
+
   <!-- plugins:css -->
   <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
   <!-- plugin css for this page -->
@@ -31,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/util/introjs-modern.css">
   <!-- End plugin css for this page -->
   <link rel="stylesheet" href="assets/css/util/fontawesome.css">
-  <link rel="manifest" href="manifest.json">
+  <!--link rel="manifest" href="manifest.json"-->
 </head>
 <body>
   <div class="container-scroller">
@@ -75,7 +79,8 @@
               <img id="profile_logo" />
             </div>
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="profileDropdown">
-              <span class="nav-profile-name text-white">Louis Barnett</span>
+              <!--label class="nav-profile-name text-white" id="nameUser"></label-->
+              <span class="nav-profile-name text-white" id="nameUser"></span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               <a id="sett" class="dropdown-item" data-toggle="modal" data-target="#modalSettingsHome">
@@ -101,9 +106,9 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav" data-step="1" data-intro="Menú de categorias">
           <li class="nav-item active">
-            <a class="nav-link" href="home.php">
+            <a class="nav-link" id="return_home">
               <i class="mdi mdi-home menu-icon"></i>
-              <span class="menu-title">Inicio</span>
+              <span class="menu-title">INICIO</span>
             </a>
           </li>
           <li class="nav-item" id="li_recargas">
@@ -610,12 +615,22 @@
   <script src="assets/js/data-table.js"></script>
   <script src="assets/js/jquery.dataTables.js"></script>
   <script src="assets/js/dataTables.bootstrap4.js"></script>
+  <script type="text/javascript" src="assets/js/js_views/js_index.js"></script>
   <!-- End custom js for this page-->
   <!--Firebase-->
-  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+  <!--script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-messaging.js"></script>
   <script type="text/javascript" src="assets/js/firebase/init.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="app.js"></script-->
+  <script type="text/javascript">
+    $('#return_home').click(function(){
+      redirect();
+    })
+
+    $(document).ready(function() {        
+        recorrido();
+    })
+  </script> 
 
 </body>
 

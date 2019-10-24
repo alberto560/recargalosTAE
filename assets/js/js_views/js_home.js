@@ -226,10 +226,6 @@ function mostrar(){
        validate_PWD("#pass","#btnPWD");
     });
 
-    $(function () {
-      // body...
-      requestPermission();
-    });
 
 
 

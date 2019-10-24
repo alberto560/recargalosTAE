@@ -1,24 +1,19 @@
-$("#btnLogin").click(function() {
-	loguear('#inputUser','#inputPwd');
-	redirect();
-})
-
-
-
 function redirect(){
   $.ajax({
       type: "POST",
       url: "home.php",
       success: function(response) {
           $('#toHome').html(response);
+          $("#nameUser").text(user);
       }
   });
 }
 
 function loguear(element) {
-	var user = $('#inputUser').val();
-  	var pass = $('#inputPwd').val();
-	$('#indicator').show();
+    var user = $('#inputUser').val();
+    var pass = $('#inputPwd').val();
+
+  $('#indicator').show();
   
   $.post('controller/Ajax_Web.php',
     {
@@ -33,3 +28,9 @@ function loguear(element) {
     "json"    
   );
 }
+
+$("#btnLogin").click(function() {
+  loguear('#inputUser','#inputPwd');
+  get_User();
+  redirect();
+})

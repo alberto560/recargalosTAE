@@ -8,9 +8,12 @@
   <title>Inicio de Sesión</title>
   <!-- plugins:css -->
   <script type="text/javascript" src="assets/jquery/jquery-3.4.1.min.js"></script>
+  <!--JS ORDER MAS USADOS-->
+   <script type="text/javascript" src="assets/js/order/tinysort.js"></script>
+  <script type="text/javascript" src="assets/js/order/order.js"></script>
   <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="text/javascript" src="assets/js/js_views/js_index.js"></script>
+  
 <!--  <link rel="shortcut icon" href="../../images/favicon.png" />-->
 </head>
 
@@ -51,12 +54,12 @@
                     <input type="password" class="form-control form-control-lg border-left-0" id="inputPwd" placeholder="Contraseña" required>
                   </div>
                 </div>                
-                <!--<div class="my-3">
-                  <input type="button" id="btnLogin" name="btnLogin" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="INICIAR SESION">                  
-                </div>-->
                 <div class="my-3">
-                  <a href="home.php" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" id="btnLogin" name="btnLogin">INICIAR SESION</a>
+                  <input type="button" id="btnLogin" name="btnLogin" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="INICIAR SESION">                  
                 </div>
+                <!--div class="my-3">
+                  <a href="home.php" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" id="btnLogin" name="btnLogin">INICIAR SESION</a>
+                </div-->
                 <div id="indicator" style="display: none; text-align: center;" class="loading_img">
                   <img src="assets/images/indicator.gif"/>
                 </div>
@@ -74,6 +77,7 @@
     <!-- page-body-wrapper ends -->
   </div>  
   </div>
+
   
   <!-- container-scroller -->
   <!-- plugins:js -->
@@ -84,7 +88,6 @@
   <script src="assets/js/template.js"></script>
   <!-- endinject -->
   <script type="text/javascript" src="assets/js/js_views/js_index.js"></script>
-  
 </body>
 
 </html>
