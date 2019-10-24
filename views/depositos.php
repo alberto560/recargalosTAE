@@ -156,7 +156,23 @@
 
                   <div class="tab-pane fade " id="list-CBancarias" role="tabpanel" aria-labelledby="list-CBancarias-list">
                     <h4><b>Cuentas Bancarias</b></h4>
-                    <div class="">
+                    
+                      <div id="radioGroup">
+                        <!-- Group of default radios - option 1 -->
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="rbtnTAE" name="groupOfDefaultRadios">
+                          <label class="custom-control-label" for="rbtnTAE">Depositos - TAE</label>
+                        </div>
+
+                        <!-- Group of default radios - option 2 -->
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="rbtnPS" name="groupOfDefaultRadios" >
+                          <label class="custom-control-label" for="rbtnPS">Deposito - PAGO DE SERVICIOS </label>
+                        </div>
+                      </div>
+                    <!--***-->
+                    <!--***-->
+                    <div class="" id="div_DepositosTAE" style="display: none">
                       <div>
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item col-12 col-md-4">
@@ -202,7 +218,7 @@
                         <div class="tab-pane fade" id="CBSantander" role="tabpanel" aria-labelledby="CBSantander-tab">
                           <div class="row">
                             <div class="col-12 col-md-6">
-                              <img src="ayuda/sites/statics/css/images/santander2.png"  class="img-fluid" alt="Responsive image">
+                              <img src="ayuda/sites/statics/css/images/santander3.png"  class="img-fluid" alt="Responsive image">
                             </div>
                             <div class="col-12 col-md-6">
                               <br>
@@ -264,6 +280,50 @@
                         </div>
                       </div>
                     </div>
+                    <!--****--
+                    <div class="" id="div_DepositosPS" style="display: none">
+                      <div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item col-12 col-md-4">
+                          <a class="nav-link active" id="Cbancomer-tab" data-toggle="tab" href="#CBBancomer" role="tab" aria-controls="CBBancomer"
+                            aria-selected="true">Bancomer</a>
+                        </li>                        
+                        <li class="nav-item col-12 col-md-4">
+                          <a class="nav-link" id="CAzteca-tab" data-toggle="tab" href="#CAzteca" role="tab" aria-controls="CAzteca"
+                            aria-selected="false">Banco Azteca</a>
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="CBBancomer" role="tabpanel" aria-labelledby="CBBancomer-tab">
+                          <div class="row">
+                            <div class="col-12 col-md-6">
+                              <img src="ayuda/sites/statics/css/images/bancomer2.png"  class="img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <br>
+                              <p><b>Titular: </b>Recargalos TAE S.A de C.V <br>
+                              <b>Cuenta: 0110791008</b> <br>
+                              <b>Clabe Interbancaria: </b>012670001107910083</p>
+                            </div>
+                          </div>
+                        </div>                      
+                        <div class="tab-pane fade" id="CAzteca" role="tabpanel" aria-labelledby="CAzteca-tab">
+                          <div class="row">
+                            <div class="col-12 col-md-6">
+                              <br>
+                              <img src="ayuda/sites/statics/css/images/azteca2.png"  class="img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <br>
+                              <p><b>Titular: </b>Tecnología Multitransaccional Aplicada al Comercio S.A de C.V <br>
+                              <b>Cuenta: 15620198393901</b></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <--****-->
                   </div>
                   <div class="tab-pane fade" id="list-CTarjeta" role="tabpanel" aria-labelledby="list-CTarjeta-list">
                     <h4><b>Compra con tarjeta</b></h4>

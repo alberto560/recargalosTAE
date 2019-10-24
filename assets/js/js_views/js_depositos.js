@@ -129,3 +129,19 @@ $(function() {
      buttonBefore : true
   });
 });
+
+    function updateStatus() {
+      if ($("#rbtnTAE").is(':checked')) {
+          $('#div_DepositosTAE').show(300);
+        //  $('#div_DepositosPS').hide(300);
+      } else {
+        if ($("#rbtnPS").is(':checked')) {
+          $('#div_DepositosTAE').hide(300);
+        //  $('#div_DepositosPS').show(300);
+        }        
+      }
+    }
+
+    $('#radioGroup').change(function(){
+      updateStatus();
+    });
