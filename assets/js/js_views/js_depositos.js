@@ -32,14 +32,9 @@ $(function() {
   //Method from clen this from
   CleanModal("#CancelReportar","#form_rep_depositos");
 
-  $("#list-depositos-list").click(function(){
-    $('#info').show(300);
-  });
-  $("#list-depositosPS-list").click(function(){
-    $('#info').hide(300);
-  });
   $("#list-CBancarias-list").click(function(){
-    $('#info').hide(300);
+        //$('#info').hide(300);
+        evaluar();
   });
   $("#list-CTarjeta-list").click(function(){
     $('#info').hide(300);
@@ -133,11 +128,13 @@ $(function() {
     function updateStatus() {
       if ($("#rbtnTAE").is(':checked')) {
           $('#div_DepositosTAE').show(300);
-        //  $('#div_DepositosPS').hide(300);
+          $('#info').show(300);
+          $('#div_DepositosPS').hide(300);
       } else {
         if ($("#rbtnPS").is(':checked')) {
           $('#div_DepositosTAE').hide(300);
-        //  $('#div_DepositosPS').show(300);
+          $('#info').hide(300);
+          $('#div_DepositosPS').show(300);          
         }        
       }
     }
@@ -145,3 +142,10 @@ $(function() {
     $('#radioGroup').change(function(){
       updateStatus();
     });
+
+    function evaluar() {
+      // body...
+      if ($("#rbtnTAE").is(':checked')) {
+        $('#info').show(300);
+      }
+    }

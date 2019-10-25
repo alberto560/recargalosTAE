@@ -53,16 +53,8 @@
           <div class="card-resp">
             <div class="card-body" >
               <div class="col-12 col-md-12">
-                <div class="list-group"  id="list-tab" role="tablist">
-                  <a class="list-group-item list-group-item-action active" id="list-depositos-list" data-toggle="list" href="#list-depositos"
-                    role="tab" aria-controls="depositos" data-step="3" data-intro="Reporte de depositos TAE <div id='carousel-example-1z' class='carousel slide carousel-fade' data-ride='carousel'><ol class='carousel-indicators'><li data-target='#carousel-example-1z' data-slide-to='0' class='active'></li><li data-target='#carousel-example-1z' data-slide-to='1'></li></ol><div class='carousel-inner' role='listbox'><div class='carousel-item active'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-com.png' alt='First slide'></div><div class='carousel-item'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-comm.png' alt='Second slide'></div></div><a class='carousel-control-prev' href='#carousel-example-1z' role='button' data-slide='prev'><span class='fas fa-angle-left blue' aria-hidden='true'></span><span class='sr-only'>Previous</span></a><a class='carousel-control-next' href='#carousel-example-1z' role='button' data-slide='next'><span class='fas fa-angle-right blue' aria-hidden='true'></span><span class='sr-only'>Next</span></a></div>">
-                    <i class="mdi mdi-clipboard-text mr-lg-4 mr-xl-4 "></i>Reportar Depositos - <b>TAE</b>
-                  </a>
-                  <a class="list-group-item list-group-item-action" id="list-depositosPS-list" data-toggle="list" href="#list-depositosPS"
-                    role="tab" aria-controls="depositosPS" data-step="4" data-intro="Reporte de depositos <div id='carousel-example-1z' class='carousel slide carousel-fade' data-ride='carousel'><ol class='carousel-indicators'><li data-target='#carousel-example-1z' data-slide-to='0' class='active'></li><li data-target='#carousel-example-1z' data-slide-to='1'></li></ol><div class='carousel-inner' role='listbox'><div class='carousel-item active'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-com1.png' alt='First slide'></div><div class='carousel-item'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-comm.png' alt='Second slide'></div></div><a class='carousel-control-prev' href='#carousel-example-1z' role='button' data-slide='prev'><span class='fas fa-angle-left blue' aria-hidden='true'></span><span class='sr-only'>Previous</span></a><a class='carousel-control-next' href='#carousel-example-1z' role='button' data-slide='next'><span class='fas fa-angle-right blue' aria-hidden='true'></span><span class='sr-only'>Next</span></a></div>">
-                    <i class="mdi mdi-clipboard mr-lg-4 mr-xl-4 "></i>Reportar Depositos - <b>PAGO DE SERVICIOS</b>
-                  </a>
-                  <a class="list-group-item list-group-item-action " id="list-CBancarias-list" data-toggle="list" href="#list-CBancarias"
+                <div class="list-group"  id="list-tab" role="tablist">                  
+                  <a class="list-group-item list-group-item-action active" id="list-CBancarias-list" data-toggle="list" href="#list-CBancarias"
                       role="tab" aria-controls="CBancarias" data-step="5" data-intro="Muestra las Cuentas bancarias de la empresa <img src='ayuda/sites/statics/css/images/img/ayu-cban.png' width='100%' />">
                       <i class=" mdi mdi-bank mr-lg-4 mr-xl-4 "></i>Cuentas Bancarias
                   </a>
@@ -87,74 +79,8 @@
           <div class="card-resp">
             <div class="card-body">
               <div class="col-12">
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="list-depositos" role="tabpanel" aria-labelledby="list-depositos-list">
-                    <h4><b>DEPOSITOS TAE</b></h4>
-                      <div class="row justify-content-md-center">
-                        <div class="col-12 col-md-4 view overlay zoom telcel">
-                            <a id="btnbancomer" data-toggle="modal" data-target="#modalBank" >
-                              <img src="ayuda/sites/statics/css/images/bancomer2.png"  class="img-fluid" alt="Responsive image">
-                            </a>
-                        </div>
-
-                        <div class="col-12 col-md-4 view overlay zoom virgin">
-                          <p/>
-                          <a id="btnsantander" data-toggle="modal" data-target="#modalBank" >
-                            <img src="ayuda/sites/statics/css/images/santander3.png"  class="img-fluid" alt="Responsive image">
-                          </a>
-                          <p/>
-                        </div>
-                        <div class="col-12 col-md-4 view overlay zoom unefon">
-                          <a id="btnoxxo" data-toggle="modal" data-target="#modalBank" >
-                            <img src="ayuda/sites/statics/css/images/oxxo2.png"  class="img-fluid" alt="Responsive image">
-                          </a>
-                        </div>
-                      </div>
-
-                      <div class="row justify-content-md-center">
-                          <div class="col-12 col-md-4 view overlay zoom atnt">
-                            <p/>
-                            <a id="btnhsbc" data-toggle="modal" data-target="#modalBank">
-                              <img src="ayuda/sites/statics/css/images/hsbc2.png"  class="img-fluid" alt="Responsive image">
-                            </a>
-                          </div>
-                          <div class="col-12 col-md-4 view overlay zoom cierto">
-                            <p/>
-                            <a id="btnbanorte" data-toggle="modal" data-target="#modalBank">
-                              <img src="ayuda/sites/statics/css/images/banorte2.png"  class="img-fluid" alt="Responsive image">
-                            </a>
-                            <p/>
-                          </div>
-                          <div class="col-12 col-md-4 view overlay zoom azteca">
-                            <p/>
-                            <a id="btnazteca" data-toggle="modal" data-target="#modalBank">
-                              <img src="ayuda/sites/statics/css/images/azteca2.png"  class="img-fluid " alt="Responsive image">
-                            </a>
-                            <p/>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="tab-pane fade" id="list-depositosPS" role="tabpanel" aria-labelledby="list-depositosPS-list">
-                    <h4><b>DEPOSITOS-PAGO DE SERVICIOS</b></h4>
-                    <br>
-                    <div class="row justify-content-md-center">
-                      <div class="col-12 col-md-6 view overlay zoom telcel">
-                        <a id="btnDespositoBancomer" data-toggle="modal" data-target="#modalBankDeposito">
-                          <img src="ayuda/sites/statics/css/images/bancomer2.png"  class="img-fluid" alt="Responsive image">
-                        </a>
-                      </div>
-                      <div class="col-12 col-md-6 view overlay zoom azteca">
-                        <p/>
-                        <a id="btnDespositoAzteca" data-toggle="modal" data-target="#modalBankDeposito">
-                          <img src="ayuda/sites/statics/css/images/azteca2.png"  class="img-fluid" alt="Responsive image">
-                        </a>
-                        <p/>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="tab-pane fade " id="list-CBancarias" role="tabpanel" aria-labelledby="list-CBancarias-list">
+                <div class="tab-content" id="nav-tabContent">                  
+                  <div class="tab-pane fade show active" id="list-CBancarias" role="tabpanel" aria-labelledby="list-CBancarias-list">
                     <h4><b>Cuentas Bancarias</b></h4>
                     
                       <div id="radioGroup">
@@ -203,9 +129,11 @@
                       </div>
                       <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="CBBancomer" role="tabpanel" aria-labelledby="CBBancomer-tab">
-                          <div class="row">
-                            <div class="col-12 col-md-6">
-                              <img src="ayuda/sites/statics/css/images/bancomer2.png"  class="img-fluid" alt="Responsive image">
+                          <div class="row">                            
+                            <div class="col-12 col-md-6 ">
+                              <a id="btnbancomer" data-toggle="modal" data-target="#modalBank" >
+                                <img src="ayuda/sites/statics/css/images/bancomer2.png"  class="img-fluid" alt="Responsive image">
+                              </a>
                             </div>
                             <div class="col-12 col-md-6">
                               <br>
@@ -218,7 +146,9 @@
                         <div class="tab-pane fade" id="CBSantander" role="tabpanel" aria-labelledby="CBSantander-tab">
                           <div class="row">
                             <div class="col-12 col-md-6">
-                              <img src="ayuda/sites/statics/css/images/santander3.png"  class="img-fluid" alt="Responsive image">
+                              <a id="btnsantander" data-toggle="modal" data-target="#modalBank" >
+                                <img src="ayuda/sites/statics/css/images/santander3.png"  class="img-fluid" alt="Responsive image">
+                              </a>                              
                             </div>
                             <div class="col-12 col-md-6">
                               <br>
@@ -230,7 +160,9 @@
                         <div class="tab-pane fade" id="COxxo" role="tabpanel" aria-labelledby="COxxo-tab">
                           <div class="row">
                             <div class="col-12 col-md-6">
-                              <img src="ayuda/sites/statics/css/images/oxxo2.png"  class="img-fluid" alt="Responsive image">
+                              <a id="btnoxxo" data-toggle="modal" data-target="#modalBank" >
+                                <img src="ayuda/sites/statics/css/images/oxxo2.png"  class="img-fluid" alt="Responsive image">
+                              </a>
                             </div>
                             <div class="col-12 col-md-6">
                               <br>
@@ -243,7 +175,9 @@
                           <div class="row">
                             <div class="col-12 col-md-6">
                               <br>
-                              <img src="ayuda/sites/statics/css/images/hsbc2.png"  class="img-fluid" alt="Responsive image">
+                              <a id="btnhsbc" data-toggle="modal" data-target="#modalBank">
+                                <img src="ayuda/sites/statics/css/images/hsbc2.png"  class="img-fluid" alt="Responsive image">
+                              </a>
                             </div>
                             <div class="col-12 col-md-6">
                               <br>
@@ -256,7 +190,9 @@
                           <div class="row">
                             <div class="col-12 col-md-6">
                               <br>
-                              <img src="ayuda/sites/statics/css/images/banorte2.png"  class="img-fluid" alt="Responsive image">
+                              <a id="btnbanorte" data-toggle="modal" data-target="#modalBank">
+                                <img src="ayuda/sites/statics/css/images/banorte2.png"  class="img-fluid" alt="Responsive image">
+                              </a>
                             </div>
                             <div class="col-12 col-md-6">
                               <br>
@@ -269,7 +205,9 @@
                           <div class="row">
                             <div class="col-12 col-md-6">
                               <br>
-                              <img src="ayuda/sites/statics/css/images/azteca2.png"  class="img-fluid" alt="Responsive image">
+                              <a id="btnazteca" data-toggle="modal" data-target="#modalBank">
+                                <img src="ayuda/sites/statics/css/images/azteca2.png"  class="img-fluid " alt="Responsive image">
+                              </a>
                             </div>
                             <div class="col-12 col-md-6">
                               <br>
@@ -280,25 +218,27 @@
                         </div>
                       </div>
                     </div>
-                    <!--****--
+                    <!--****-->
                     <div class="" id="div_DepositosPS" style="display: none">
                       <div>
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item col-12 col-md-4">
-                          <a class="nav-link active" id="Cbancomer-tab" data-toggle="tab" href="#CBBancomer" role="tab" aria-controls="CBBancomer"
+                        <li class="nav-item col-12 col-md-6">
+                          <a class="nav-link active" id="CBBancomerPS-tab" data-toggle="tab" href="#CBBancomerPS" role="tab" aria-controls="CBBancomerPS"
                             aria-selected="true">Bancomer</a>
                         </li>                        
-                        <li class="nav-item col-12 col-md-4">
-                          <a class="nav-link" id="CAzteca-tab" data-toggle="tab" href="#CAzteca" role="tab" aria-controls="CAzteca"
+                        <li class="nav-item col-12 col-md-6">
+                          <a class="nav-link" id="CAztecaPS-tab" data-toggle="tab" href="#CAztecaPS" role="tab" aria-controls="CAztecaPS"
                             aria-selected="false">Banco Azteca</a>
                         </li>
                       </ul>
                       </div>
                       <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="CBBancomer" role="tabpanel" aria-labelledby="CBBancomer-tab">
+                        <div class="tab-pane fade show active" id="CBBancomerPS" role="tabpanel" aria-labelledby="CBBancomerPS-tab">
                           <div class="row">
                             <div class="col-12 col-md-6">
-                              <img src="ayuda/sites/statics/css/images/bancomer2.png"  class="img-fluid" alt="Responsive image">
+                              <a id="btnDespositoBancomer" data-toggle="modal" data-target="#modalBankDeposito">
+                                <img src="ayuda/sites/statics/css/images/bancomer2.png"  class="img-fluid" alt="Responsive image">
+                              </a>
                             </div>
                             <div class="col-12 col-md-6">
                               <br>
@@ -307,12 +247,14 @@
                               <b>Clabe Interbancaria: </b>012670001107910083</p>
                             </div>
                           </div>
-                        </div>                      
-                        <div class="tab-pane fade" id="CAzteca" role="tabpanel" aria-labelledby="CAzteca-tab">
+                        </div>                        
+                        <div class="tab-pane fade" id="CAztecaPS" role="tabpanel" aria-labelledby="CAztecaPS-tab">
                           <div class="row">
                             <div class="col-12 col-md-6">
                               <br>
-                              <img src="ayuda/sites/statics/css/images/azteca2.png"  class="img-fluid" alt="Responsive image">
+                              <a id="btnDespositoAzteca" data-toggle="modal" data-target="#modalBankDeposito">
+                                <img src="ayuda/sites/statics/css/images/azteca2.png"  class="img-fluid" alt="Responsive image">
+                              </a>
                             </div>
                             <div class="col-12 col-md-6">
                               <br>
@@ -323,7 +265,7 @@
                         </div>
                       </div>
                     </div>
-                    <--****-->
+                    <!--****-->
                   </div>
                   <div class="tab-pane fade" id="list-CTarjeta" role="tabpanel" aria-labelledby="list-CTarjeta-list">
                     <h4><b>Compra con tarjeta</b></h4>
@@ -434,7 +376,7 @@
           </div>
         </div>
       </div>
-      <div class="row justify-content-start tab-pane fade show" id="info">
+      <div class="row justify-content-start tab-pane fade show" id="info" style="display: none">
         <div class="col-12 col-md-6" id="div_horario">
           <div class="card-resp">
             <div class="card-body">
