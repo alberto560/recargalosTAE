@@ -463,8 +463,13 @@
                   <input type="checkbox" class="custom-control-input" id="adjuntar_imagen">
                   <label class="custom-control-label" for="adjuntar_imagen">Adjuntar imágen</label>
                 </div>
-              </div>
+              </div>              
             </div>
+            <div class="row justify-content-center">                
+                <div id="indicator" style="display: none; text-align: center;" class="loading_img">
+                  <img src="assets/images/indicator.gif"/>
+                </div>
+              </div>
             <br>
             <div class="row justify-content-md-center" style="display: none;" id="div_browse">
               <div class="col-12 col-md-10">

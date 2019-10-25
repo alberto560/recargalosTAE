@@ -5,6 +5,7 @@
 	include_once("../model/MiCuenta.php");
 	include_once("../model/Login.php");
 	include_once("../model/Recarga.php");
+	include_once("../model/Depositos.php");
 /**
  *
  */
@@ -198,4 +199,35 @@
 		        break;
 	}
 	// Fin Recargas
+	//****
+	//****
+	//Login
+	class ajax_web_depositos
+	{
+		private $model;
+		function __construct()
+		{
+			$this->model = new Depositos();
+		}
+		public function get_fact(){
+		 $consulta= $this->model->get_factura();
+	   	 echo $consulta;
+		}
+	}
+	$consulta_depositos= new ajax_web_depositos();
+
+	if(!isset($_POST['P'])) {
+		print json_encode(0);
+		return;
+	}
+
+	switch($_POST['P']) {
+		case 'REPORTES':
+      		$consulta_depositos->get_fact();
+		break;
+	}
+
+	//****
+	//****
+
 ?>

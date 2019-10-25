@@ -149,9 +149,9 @@
 
   $(function() {
     ////
-    $('#btnconsultar').click(function(){
+    /*$('#btnconsultar').click(function(){
     get_Recargas(this);
-    });
+    });*/
 
     $('#btnfechainicial').click(function(){
     fechainicial("input#fechai","input#timei",'input#btnfechai');
@@ -185,9 +185,9 @@
 //***+
 //View Consultas
 $(function() {
-  $('#btnconsultar').click(function(){
+  /*$('#btnconsultar').click(function(){
   get_Recargas(this);
-  });
+  });*/
 
   //btn action modal´s date´s
   $('#btnfechainicial').click(function(){
