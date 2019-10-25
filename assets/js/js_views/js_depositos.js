@@ -6,6 +6,9 @@ $(document).ready(function() {
   });
   //call to method validar_formulario of validate_rules script
   validar_formulario("#form_rep_depositos","#btnReportar");
+
+  fechaValInicio("#btnfechai");
+  fechaValFin("#btnfechaf");
 });
 
 //Methos from hide o show elements of DOM
@@ -143,6 +146,13 @@ $(function() {
     })
   }
 
+  $("#btnPayNow").click(function() {
+    // body...
+    var topay = $("#topay").val();
+                $("#getTopay").text("$ "+topay);
+  })
+
+
     function updateStatus() {
       if ($("#rbtnTAE").is(':checked')) {
           $('#div_DepositosTAE').show(300);
@@ -168,8 +178,13 @@ $(function() {
       }
     }
 
-
+    //*****
+    //*****
     $("#solicitar_factura").click(function() {
+      get_fact();
+    });
+
+    $("#solicitar_facturaCT").click(function() {
       get_fact();
     });
 
@@ -193,6 +208,162 @@ $(function() {
       var test = jsonData.Rfcs[0];
       if (test == 0) {
        $("#solicitar_factura").prop('checked', false); 
+       $("#solicitar_facturaCT").prop('checked', false); 
       }
       dontFact()
+    } 
+    //****
+    //****
+    //****
+    //****
+    $("#confirmarPagarAhora").click(function() {
+      get_confPCT("#producto","#topay");
+    });
+
+    function get_confPCT(element) {
+      var producto = $('#producto').val();
+      var topayAW = $('#topay').val();
+
+      $('#indicator').show();
+
+      $.post('controller/Ajax_Web.php',
+        {
+          P: 'REPORTES',
+          F: 'P_ecomm',
+          PTAE: producto,
+          emonto: topayAW
+        },
+        function(data, textStatus) {
+          renderModalLst(data);
+          $('#indicator').hide();
+        },
+        "json"
+      );
     }
+
+    function dontServicePayWhitCard(message) {
+    Swal.fire({
+      type: 'error',
+      title: message,
+      width: 610,
+      padding: '1em',
+      background: '#fff',
+      backdrop: `
+        rgba(0, 136, 255, 0.58)
+        center left
+        no-repeat
+      `,
+      showConfirmButton: true,
+      //timer: 1500
+
+      })
+    }
+
+    function renderModalLst(jsonData) {
+      var message;     
+            $.each(jsonData, function (i, member) {
+              message = member[0];
+            });            
+          dontServicePayWhitCard(message)
+
+          $('#topay').val("");
+    }
+    //****
+    //****
+    //****
+    //****
+    $("#list-CFiscales-list").click(function() {
+      getCuentasFiscales();
+    });
+
+    function getCuentasFiscales() {
+      $('#indicator').show();
+
+      $.post('controller/Ajax_Web.php',
+        {
+          P: 'REPORTES',
+          F: 'C_rfcs'          
+        },
+        function(data, textStatus) {
+         // renderModalLst(data);
+          $('#indicator').hide();
+        },
+        "json"
+      );
+    }
+    //****
+    //****
+    //****
+    //****
+    function successAddCF(message) {
+    Swal.fire({
+      type: 'success',
+      title: message,
+      width: 610,
+      padding: '1em',
+      background: '#fff',
+      backdrop: `
+        rgba(0, 136, 255, 0.58)
+        center left
+        no-repeat
+      `,
+      showConfirmButton: true,
+      //timer: 1500
+      })
+    }
+    $("#btnAddCuentaFiscal").click(function() {
+      AddCuentaFiscal(this);
+    });
+
+    function AddCuentaFiscal(element) {
+      var rfc = $('#rfc').val();
+      var razon_social = $('#razon_social').val();
+      var calle = $('#calle').val();
+      var num_exterior = $('#num_exterior').val();
+      var num_interior = $('#num_interior').val();
+      var colonia = $('#colonia').val();
+      var codigo_postal = $('#codigo_postal').val();
+      var SelMunicipios = $('#SelMunicipios').val();
+      var SelEstados = $('#SelEstados').val();
+      var email = $('#email').val();
+
+      $('#indicator').show();
+
+      $.post('controller/Ajax_Web.php',
+        {
+          P: 'REPORTES',
+          F: 'GD_rfc',
+          rfc: rfc,
+          nombre_fi: razon_social,
+          calle: calle,
+          noExterior: num_exterior,
+          noInterior: num_interior,
+          colonia: colonia,
+          codigoPostal: codigo_postal,
+          municipio: SelMunicipios,
+          estado: SelEstados,
+          mail: email
+         
+        },
+        function(data, textStatus) {
+          renderModalSucces(data);
+          $('#indicator').hide();
+        },
+        "json"
+      );
+    }
+      function renderModalSucces(jsonData) {
+        var first;     
+        var second;     
+            $.each(jsonData, function (i, member) {
+              first = member[0];
+            });   
+
+            $.each(jsonData, function (i, member) {
+              second = member[1];
+            });            
+
+            var message = "";
+                message = second+" " + first
+          successAddCF(message);          
+      }

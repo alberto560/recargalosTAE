@@ -266,7 +266,7 @@
 	// Fin Paquetes
 	//****
 	//****
-	//Login
+	//Depositos
 	class ajax_web_depositos
 	{
 		private $model;
@@ -278,19 +278,50 @@
 		 $consulta= $this->model->get_factura();
 	   	 echo $consulta;
 		}
+		public function CompraTar(){
+		 $consult= $this->model->get_CompraTarjeta();
+	   	 echo $consult;
+		}
+		public function get_CF(){
+		 $consult= $this->model->get_CuentasFiscal();
+	   	 echo $consult;
+		}
+		public function Add_CF(){
+		 $consult= $this->model->AddCF();
+	   	 echo $consult;
+		}
 	}
-	$consulta_depositos= new ajax_web_depositos();
+		$consulta_depositos= new ajax_web_depositos();
 
-	if(!isset($_POST['P'])) {
-		print json_encode(0);
-		return;
-	}
-
-	switch($_POST['P']) {
-		case 'REPORTES':
-      		$consulta_depositos->get_fact();
-		break;
-	}
+		if(!isset($_POST['P'])) {
+			print json_encode(0);
+			return;
+		}
+		//$glob = isset($_POST['F']);
+		switch($_POST['P']) {
+			case 'REPORTES':
+				if (($_POST['F'])=='Rfcs') {
+						# code...
+						$consulta_depositos->get_fact();
+					}else{
+						if (($_POST['F'])=='P_ecomm') {
+							# code...
+							$consulta_depositos->CompraTar();
+						}else{
+							if (($_POST['F'])=='C_rfcs') {
+								# code...
+								$consulta_depositos->get_CF();
+							}else{
+								if (($_POST['F'])=='GD_rfc') {
+									# code...
+									$consulta_depositos->Add_CF();
+								}
+							}
+						}
+					}
+			break;
+		}
+	
 
 	//****
 	//****

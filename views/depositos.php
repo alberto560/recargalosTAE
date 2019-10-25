@@ -18,6 +18,7 @@
     <script type="text/javascript" src="assets/js/util/data.js"></script>
     <script type="text/javascript" src="assets/js/util/jlinq.js"></script>
     <script type="text/javascript" src="assets/js/util/stacktable.js"></script>
+    <script type="text/javascript" src="assets/js/js_views/js_home.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-4-3-1.min.css">
 
@@ -287,13 +288,18 @@
                         </div>
                       </div>
                       <br>
-                      <div class="row justify-content-end">
-                        <div class="col-12 col-md-4">
+                      <div class="row justify-content-start">
+                        <div class="col-12 col-md-6">
+                            <label for="producto">Producto</label>
+                            <input type="text" name="producto" id="producto" class="form-control" value="Recarga Electronica TAE">
+                        </div>
+                        <div class="col-12 col-md-6">
                           <div class="custom-control custom-checkbox">
+                            <label for="solicitar_facturaCT"></label>
                             <input type="checkbox" class="custom-control-input" id="solicitar_facturaCT" name="solicitar_facturaCT">
                             <label class="custom-control-label" for="solicitar_facturaCT">Solicitar Factura</label>
                           </div>
-                        </div>
+                        </div>                        
                       </div>
                       <br>
                       <div class="row justify-content-between">
@@ -302,7 +308,7 @@
                           <input class="form-control" type="number" min="1" name="topay" id="topay" placeholder="$">
                         </div>
                         <div class="col-12 col-md-5">
-                          <button type="button" name="btnPayNow" id="btnPayNow" class="btn btn-primary">Pagar ahora</button>
+                          <button type="button" name="btnPayNow" id="btnPayNow" class="btn btn-primary" data-toggle="modal" data-target="#modalConfirmarPCT">Pagar ahora</button>
                         </div>
                       </div>
 
@@ -362,11 +368,11 @@
                       <div class="row justify-content-start">
                           <div class="col-12 col-md-4">
                             <center><b><label for="btnfechai">Fecha inicial</label></b></center>
-                            <input data-toggle="modal" data-target="#modalfechai" type="button" id="btnfechai" name="btnfechai" class="form-control resaltado" value="aaaa-mm-dd">
+                            <input data-toggle="modal" data-target="#modalfechai" type="button" id="btnfechai" name="btnfechai" class="form-control resaltado" >
                           </div>
                           <div class="col-12 col-md-4">
                             <center><b><label for="btnfechaf">Fecha final</label></b></center>
-                            <input data-toggle="modal" data-target="#modalfechaf" type="button" id="btnfechaf" name="btnfechaf" class="form-control resaltado" value="aaaa-mm-dd" >
+                            <input data-toggle="modal" data-target="#modalfechaf" type="button" id="btnfechaf" name="btnfechaf" class="form-control resaltado"  >
                           </div>
                           <div class="col-12 col-md-4">
                               <center>
@@ -568,7 +574,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal" id="CancelAddCuentaFiscal">Cerrar</button>
-        <button type="button" class="btn btn-primary" id="btnAddCuentaFiscal">Guardar</button>
+        <button type="button" class="btn btn-primary" id="btnAddCuentaFiscal" data-dismiss="modal">Guardar</button>
       </div>
       </form>
     </div>
@@ -740,6 +746,31 @@
   </div>
   </div>
   <!-- Central Modal Confirmación Abono -->
+  <!-- Central Modal Small -->
+  <div class="modal fade" id="modalConfirmarPCT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+
+    <!-- Change class .modal-sm to change the size of the modal -->
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title w-100" id="myModalLabel">Confirmar Pago</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row justify-content-md-center">
+            <h2><b><label id="getTopay"></label></b></h2>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Corregir</button>
+          <button type="button" class="btn btn-primary btn-sm" id="confirmarPagarAhora" data-dismiss="modal">Pagar Ahora</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script type="text/javascript">
     $('table').stacktable();
   </script>
