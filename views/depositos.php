@@ -53,21 +53,21 @@
           <div class="card-resp">
             <div class="card-body" >
               <div class="col-12 col-md-12">
-                <div class="list-group"  id="list-tab" role="tablist">                  
+                <div class="list-group"  id="list-tab" role="tablist">
                   <a class="list-group-item list-group-item-action active" id="list-CBancarias-list" data-toggle="list" href="#list-CBancarias"
-                      role="tab" aria-controls="CBancarias" data-step="5" data-intro="Muestra las Cuentas bancarias de la empresa <img src='ayuda/sites/statics/css/images/img/ayu-cban.png' width='100%' />">
+                      role="tab" aria-controls="CBancarias" data-step="3" data-intro="Muestra las Cuentas bancarias para Depositos Recargalos TAE y Depositos Pago de Servicios <img src='ayuda/sites/statics/css/images/img/ayu-cban.png' width='100%' />">
                       <i class=" mdi mdi-bank mr-lg-4 mr-xl-4 "></i>Cuentas Bancarias
                   </a>
                   <a class="list-group-item list-group-item-action" id="list-CTarjeta-list" data-toggle="list" href="#list-CTarjeta"
-                      role="tab" aria-controls="CTarjeta" data-step="6" data-intro="Compra con tarjeta <img src='ayuda/sites/statics/css/images/img/ayu-ctar.png' width='100%' />">
+                      role="tab" aria-controls="CTarjeta" data-step="4" data-intro="Compra con tarjeta <img src='ayuda/sites/statics/css/images/img/ayu-ctar.png' width='100%' />">
                       <i class="mdi mdi-credit-card mr-lg-4 mr-xl-4 "></i>Compra con tarjeta
                   </a>
                   <a class="list-group-item list-group-item-action" id="list-CFiscales-list" data-toggle="list" href="#list-CFiscales"
-                      role="tab" aria-controls="CFiscales" data-step="7" data-intro="Puede ver las cuentas fiscales agregadas o crear una nueva. <div id='carousel-example-1z' class='carousel slide carousel-fade' data-ride='carousel'><ol class='carousel-indicators'><li data-target='#carousel-example-1z' data-slide-to='0' class='active'></li><li data-target='#carousel-example-1z' data-slide-to='1'></li></ol><div class='carousel-inner' role='listbox'><div class='carousel-item active'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-cfis.png' alt='First slide'></div><div class='carousel-item'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-cfiss.png' alt='Second slide'></div></div><a class='carousel-control-prev' href='#carousel-example-1z' role='button' data-slide='prev'><span class='fas fa-angle-left blue' aria-hidden='true'></span><span class='sr-only'>Previous</span></a><a class='carousel-control-next' href='#carousel-example-1z' role='button' data-slide='next'><span class='fas fa-angle-right blue' aria-hidden='true'></span><span class='sr-only'>Next</span></a></div>">
+                      role="tab" aria-controls="CFiscales" data-step="5" data-intro="Puede ver las cuentas fiscales agregadas o crear una nueva. <div id='carousel-example-1z' class='carousel slide carousel-fade' data-ride='carousel'><ol class='carousel-indicators'><li data-target='#carousel-example-1z' data-slide-to='0' class='active'></li><li data-target='#carousel-example-1z' data-slide-to='1'></li></ol><div class='carousel-inner' role='listbox'><div class='carousel-item active'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-cfis.png' alt='First slide'></div><div class='carousel-item'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-cfiss.png' alt='Second slide'></div></div><a class='carousel-control-prev' href='#carousel-example-1z' role='button' data-slide='prev'><span class='fas fa-angle-left blue' aria-hidden='true'></span><span class='sr-only'>Previous</span></a><a class='carousel-control-next' href='#carousel-example-1z' role='button' data-slide='next'><span class='fas fa-angle-right blue' aria-hidden='true'></span><span class='sr-only'>Next</span></a></div>">
                       <i class="mdi mdi-clipboard-outline mr-lg-4 mr-xl-4 "></i>Cuentas Fiscales
                   </a>
                   <a class="list-group-item list-group-item-action" id="list-CRealizadas-list" data-toggle="list" href="#list-CRealizadas"
-                      role="tab" aria-controls="CRealizadas" data-step="8" data-intro="Se puede buscar las compras realizadas ingresando la fecha. <div id='carousel-example-1z' class='carousel slide carousel-fade' data-ride='carousel'><ol class='carousel-indicators'><li data-target='#carousel-example-1z' data-slide-to='0' class='active'></li><li data-target='#carousel-example-1z' data-slide-to='1'></li></ol><div class='carousel-inner' role='listbox'><div class='carousel-item active'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-crea.png' alt='First slide'></div><div class='carousel-item'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-fi.png' alt='Second slide'></div><div class='carousel-item'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-ff.png' alt='Third slide'></div></div><a class='carousel-control-prev' href='#carousel-example-1z' role='button' data-slide='prev'><span class='fas fa-angle-left blue' aria-hidden='true'></span><span class='sr-only'>Previous</span></a><a class='carousel-control-next' href='#carousel-example-1z' role='button' data-slide='next'><span class='fas fa-angle-right blue' aria-hidden='true'></span><span class='sr-only'>Next</span></a></div>">
+                      role="tab" aria-controls="CRealizadas" data-step="6" data-intro="Se puede buscar las compras realizadas ingresando la fecha. <div id='carousel-example-1z' class='carousel slide carousel-fade' data-ride='carousel'><ol class='carousel-indicators'><li data-target='#carousel-example-1z' data-slide-to='0' class='active'></li><li data-target='#carousel-example-1z' data-slide-to='1'></li></ol><div class='carousel-inner' role='listbox'><div class='carousel-item active'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-crea.png' alt='First slide'></div><div class='carousel-item'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-fi.png' alt='Second slide'></div><div class='carousel-item'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-ff.png' alt='Third slide'></div></div><a class='carousel-control-prev' href='#carousel-example-1z' role='button' data-slide='prev'><span class='fas fa-angle-left blue' aria-hidden='true'></span><span class='sr-only'>Previous</span></a><a class='carousel-control-next' href='#carousel-example-1z' role='button' data-slide='next'><span class='fas fa-angle-right blue' aria-hidden='true'></span><span class='sr-only'>Next</span></a></div>">
                       <i class="mdi mdi-cart-outline mr-lg-4 mr-xl-4 "></i>Compras Realizadas
                   </a>
                 </div>
@@ -79,10 +79,10 @@
           <div class="card-resp">
             <div class="card-body">
               <div class="col-12">
-                <div class="tab-content" id="nav-tabContent">                  
+                <div class="tab-content" id="nav-tabContent">
                   <div class="tab-pane fade show active" id="list-CBancarias" role="tabpanel" aria-labelledby="list-CBancarias-list">
                     <h4><b>Cuentas Bancarias</b></h4>
-                    
+
                       <div id="radioGroup">
                         <!-- Group of default radios - option 1 -->
                         <div class="custom-control custom-radio">
@@ -129,7 +129,7 @@
                       </div>
                       <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="CBBancomer" role="tabpanel" aria-labelledby="CBBancomer-tab">
-                          <div class="row">                            
+                          <div class="row">
                             <div class="col-12 col-md-6 ">
                               <a id="btnbancomer" data-toggle="modal" data-target="#modalBank" >
                                 <img src="ayuda/sites/statics/css/images/bancomer2.png"  class="img-fluid" alt="Responsive image">
@@ -148,7 +148,7 @@
                             <div class="col-12 col-md-6">
                               <a id="btnsantander" data-toggle="modal" data-target="#modalBank" >
                                 <img src="ayuda/sites/statics/css/images/santander3.png"  class="img-fluid" alt="Responsive image">
-                              </a>                              
+                              </a>
                             </div>
                             <div class="col-12 col-md-6">
                               <br>
@@ -225,7 +225,7 @@
                         <li class="nav-item col-12 col-md-6">
                           <a class="nav-link active" id="CBBancomerPS-tab" data-toggle="tab" href="#CBBancomerPS" role="tab" aria-controls="CBBancomerPS"
                             aria-selected="true">Bancomer</a>
-                        </li>                        
+                        </li>
                         <li class="nav-item col-12 col-md-6">
                           <a class="nav-link" id="CAztecaPS-tab" data-toggle="tab" href="#CAztecaPS" role="tab" aria-controls="CAztecaPS"
                             aria-selected="false">Banco Azteca</a>
@@ -247,7 +247,7 @@
                               <b>Clabe Interbancaria: </b>012670001107910083</p>
                             </div>
                           </div>
-                        </div>                        
+                        </div>
                         <div class="tab-pane fade" id="CAztecaPS" role="tabpanel" aria-labelledby="CAztecaPS-tab">
                           <div class="row">
                             <div class="col-12 col-md-6">
