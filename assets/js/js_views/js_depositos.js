@@ -125,6 +125,24 @@ $(function() {
   });
 });
 
+  function dontFact() {
+  Swal.fire({
+    type: 'error',
+    title: 'No Tiene RFCs Disponibles <br> Puede darlos de alta en la opcion Compras -> Cuentas Fiscales',
+    width: 610,
+    padding: '1em',
+    background: '#fff',
+    backdrop: `
+      rgba(0, 136, 255, 0.58)
+      center left
+      no-repeat
+    `,
+    showConfirmButton: true,
+    //timer: 1500
+
+    })
+  }
+
     function updateStatus() {
       if ($("#rbtnTAE").is(':checked')) {
           $('#div_DepositosTAE').show(300);
@@ -174,8 +192,7 @@ $(function() {
     function dontChecked(jsonData) {    
       var test = jsonData.Rfcs[0];
       if (test == 0) {
-       // $( "solicitar_factura:not(:checked)");          
-       console.log("si entro");
-      $("#solicitar_factura").prop('checked', false); 
+       $("#solicitar_factura").prop('checked', false); 
       }
+      dontFact()
     }
