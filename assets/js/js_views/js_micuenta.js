@@ -19,6 +19,16 @@ $(function(){
     get_datos();
   });
 });
+$(function(){
+  $('#operadores').click(function(){
+    get_operador();
+  });
+});
+$(function(){
+  $('#acceswpd').click(function(){
+    get_wml();
+  });
+});
 
 function myFunction(){
   Swal.mixin({
@@ -138,8 +148,7 @@ var mail;
       });
       console.log(mail);
 
-      var name_only = nom.substring(24);
-      console.log(name_only);
+
 
 
     $("#inputName").val(nom);
@@ -152,6 +161,51 @@ var mail;
     $("#inputTelC").val(telf1);
     $("#inputTelf").val(telf2);
     $("#inputEmail").val(mail);
+    //$("#ModalSaldoTitle").html(title);
+
+  }
+
+
+
+function get_operador() {
+
+  $('#proces2').show();
+
+  $.post('controller/Ajax_Web.php',
+    {
+      P: 'OPERADORES_TBL'
+    },
+    function(data, textStatus) {
+      renderOperador(data);
+      $('#proces2').hide();
+    },
+    "json"
+  );
+}
+
+function renderOperador(jsonData) {
+var estatus;
+var oper;
+var nam;
+
+      $.each(jsonData, function (i, member) {
+        estatus = member[0];
+      });
+      console.log(estatus);
+
+      $.each(jsonData, function (i, member) {
+        oper = member[1];
+      });
+      console.log(oper);
+
+      $.each(jsonData, function (i, member) {
+        nam = member[2];
+      });
+      console.log(nam);
+
+    $("#estatusOP").html(estatus);
+    $("#numOP").html(oper);
+    $("#nomb").html(nam);
     //$("#ModalSaldoTitle").html(title);
 
   }

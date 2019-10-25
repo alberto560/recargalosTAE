@@ -39,8 +39,8 @@
                     <div class="list-group" id="list-tab" role="tablist">
                       <a class="list-group-item list-group-item-action active" id="list-passwd-list" data-toggle="list" href="#list-passwd" role="tab" aria-controls="passwd" style="text-align: left;" data-step="3" data-intro="Cambiar contraseña <img src='ayuda/sites/statics/css/images/img/ayu-cc.png' height='300' />"><i class="mdi mdi-account-key  fa-2x"></i> &nbsp; Cambiar Contraseña</a>
                       <a class="list-group-item list-group-item-action" id="misDatos" data-toggle="list" href="#MisDatos_Div" role="tab" aria-controls="profile" style="text-align: left;" data-step="4" data-intro="Mis datos <img src='ayuda/sites/statics/css/images/img/ayu-mis.png' height='300'/>"><i class="mdi mdi-account-card-details fa-2x"></i> &nbsp; Mis datos registrados</a>
-                      <a class="list-group-item list-group-item-action" id="list-operador-list" data-toggle="list" href="#list-operador" role="tab" aria-controls="operador" style="text-align: left;" data-step="5" data-intro="Operadores <img src='ayuda/sites/statics/css/images/img/ayu-?.png' weight='100' height='205' />"><i class="mdi mdi-headset fa-2x"></i> &nbsp; Operadores</a>
-                      <a class="list-group-item list-group-item-action" id="list-acceswpd-list" data-toggle="list" href="#list-acceswpd" role="tab" aria-controls="acceswpd" style="text-align: left;" data-step="6" data-intro="Acceso WAP <img src='ayuda/sites/statics/css/images/img/ayu-?.png' weight='100' height='205' />"><i class="mdi mdi-cellphone-basic fa-2x"></i> &nbsp; Acceso Wap/Wml</a>
+                      <a class="list-group-item list-group-item-action" id="operadores" data-toggle="list" href="#list-operador" role="tab" aria-controls="operador" style="text-align: left;" data-step="5" data-intro="Operadores <img src='ayuda/sites/statics/css/images/img/ayu-?.png' weight='100' height='205' />"><i class="mdi mdi-headset fa-2x"></i> &nbsp; Operadores</a>
+                      <a class="list-group-item list-group-item-action" id="acceswpd" data-toggle="list" href="#list-acceswpd" role="tab" aria-controls="acceswpd" style="text-align: left;" data-step="6" data-intro="Acceso WAP <img src='ayuda/sites/statics/css/images/img/ayu-?.png' weight='100' height='205' />"><i class="mdi mdi-cellphone-basic fa-2x"></i> &nbsp; Acceso Wap/Wml</a>
                       <a class="list-group-item list-group-item-action" id="list-accessms-list" data-toggle="list" href="#list-accessms" role="tab" aria-controls="accessms" style="text-align: left;" data-step="7" data-intro="Acceso SMS <img src='ayuda/sites/statics/css/images/img/ayu-?.png' weight='100' height='205' />"><i class="mdi mdi-message-text fa-2x"></i> &nbsp; Acceso SMS</a>
                     </div>
                   </div>
@@ -139,13 +139,19 @@
                             </div>
                             <center><button type="button" id="save" class="btn btn-success">Guardar Cambios</button></center>
                           </form>
-                          <div id="proces" style="display: none; text-align: center;" class="loading_img">
-                            <img src="assets/images/indicator.gif"/>
-                          </div>
                         </div>
                       </div>
+                      <div id="proces" style="display: none; text-align: center;" class="loading_img">
+                        <img src="assets/images/indicator.gif"/>
+                      </div>
+                      <div id="proces2" style="display: none; text-align: center;" class="loading_img">
+                        <img src="assets/images/indicator.gif"/>
+                      </div>
+                      <div id="proces3" style="display: none; text-align: center;" class="loading_img">
+                        <img src="assets/images/indicator.gif"/>
+                      </div>
                       <!--Lista Operadores-->
-                      <div class="tab-pane fade" id="list-operador" role="tabpanel" aria-labelledby="list-operador-list">
+                      <div class="tab-pane fade" id="list-operador" role="tabpanel" aria-labelledby="operadores">
                         </br></br><center><h4><b>Operadores</b></h4></center></br>
                         <div class="container">
                           <div class="row justify-content-md-end">
@@ -165,13 +171,17 @@
                           <table id="paswdOp" class="table table-bordered text-center">
                             <thead>
                               <tr>
-                                <th class="text-center">Operadores</th>
+                                <th class="text-center">Estatus</th>
+                                <th class="text-center">Operador</th>
+                                <th class="text-center">Nombre</th>
                                 <th width="80" class="text-center">Opción</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                  <td class="pt-3-half">Operador 1</td>
+                                  <td class="pt-3-half"><h5 name="estatusOP" id="estatusOP"></h5></td>
+                                  <td class="pt-3-half"><h5 id="numOP" name="numOP"></h5></td>
+                                  <td class="pt-3-half"><h5 id="nomb" name="nom"></h5></td>
                                   <td>
                                     <div class="redimen2">
                                       <span class="table-up"><a id="editaR" data-toggle="modal" data-target="#modalOperador" class="indigo-text"><i class="mdi mdi-table-edit fa-2x" aria-hidden="true"></i></a></span>
@@ -190,7 +200,7 @@
                         </div>
                       </div>
                       <!--Acceso WAP-->
-                      <div class="tab-pane fade" id="list-acceswpd" role="tabpanel" aria-labelledby="list-acceswpd-list">
+                      <div class="tab-pane fade" id="list-acceswpd" role="tabpanel" aria-labelledby="acceswpd">
                         <div class="container" style="text-align: left;">
                           </br><center><h4><b>Acceso WAP/WML</b></h4></center></br>
                           <div class="card-header mdb-color lighten-4">

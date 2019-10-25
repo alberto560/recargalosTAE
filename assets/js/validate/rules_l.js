@@ -97,7 +97,7 @@ function validate_CTA(form,btnEnable){
    } });
 
 }*/
-function validate_tel(form,btnEnable){
+/*function validate_tel(form,btnEnable){
   $(form).validate({
        rules:
          {
@@ -133,7 +133,7 @@ function validate_tel(form,btnEnable){
          $(btnEnable).attr('disabled', true);
    } });
 
-}
+}*/
 /*function validamodal(form){
   $(form).validate({
        rules:
@@ -187,11 +187,11 @@ function validate_tel(form,btnEnable){
    } });
 
 }*/
-function validate_telmx(form,btnEnable){
+function validate_tel(form,btnEnable){
   $(form).validate({
        rules:
          {
-             inpPaqmx:
+             inpPaq:
              {
                   required: true,
                   minlength: 10,
@@ -199,14 +199,14 @@ function validate_telmx(form,btnEnable){
              },
              inpPaqCmx:
              {
-                   equalTo: "#inpPaqmx",
+                   equalTo: "#inpPaq",
                    minlength: 6,
                    maxlength: 10
              }
           },
           messages:
           {
-              inpPaqmx:
+              inpPaq:
               {
                     required:"Ingrese su No. de Teléfono",
                     maxlength: "Maximo 10 caracteres"
@@ -220,11 +220,11 @@ function validate_telmx(form,btnEnable){
           // Called when the element is invalid:
           highlight: function(element) {
               $(inpPaqCmx).css('background', '#ffdddd');
-              $(inpPaqmx).css('background', '#ffdddd');
+              $(inpPaq).css('background', '#ffdddd');
           },
           // Called when the element is valid:
           unhighlight: function(element) {
-              $(inpPaqmx).css('background', '#ffffff');
+              $(inpPaq).css('background', '#ffffff');
               $(inpPaqCmx).css('background', '#ffffff');
           }
      });

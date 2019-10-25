@@ -5,6 +5,7 @@
 	include_once("../model/MiCuenta.php");
 	include_once("../model/Login.php");
 	include_once("../model/Recarga.php");
+	include_once("../model/Paquetes.php");
 /**
  *
  */
@@ -109,7 +110,7 @@
 
 	//****
 	//****
-	//Estado de cuenta
+	//Mi cuenta
 	class ajax_web_cuenta
 	{
 	private $model;
@@ -134,6 +135,34 @@
       		$consulta_cuenta->consulta_datos();
 		break;
 	}
+
+	//Consulta Operadores
+	class ajax_web_cuenta1
+	{
+		private $model;
+		function __construct()
+		{
+			$this->model = new MiCuenta();
+		}
+		public function consulta_op(){
+		 $consultao= $this->model->get_operador();
+	   	 echo $consultao;
+		}
+	}
+	$consulta_operador= new ajax_web_cuenta1();
+
+	if(!isset($_POST['P'])) {
+		print json_encode(0);
+		return;
+	}
+
+	switch($_POST['P']) {
+		case 'OPERADORES_TBL':
+      		$consulta_operador->consulta_op();
+		break;
+	}
+
+	//****
 
 	//****
 	//****
@@ -198,4 +227,42 @@
 		        break;
 	}
 	// Fin Recargas
+
+	//****
+	//****
+	//Paquetes
+	class ajax_web_paquetes
+	{
+		private $model;
+				function __construct()
+				{
+					$this->model = new Paquetes();
+				}
+				public function consultar(){
+					$consulta=$this->model->get_Paquete();
+					echo $consulta;
+				}
+				public function consultar_all(){
+					$consulta=$this->model->get_All2();
+					echo $consulta;
+				}
+			}
+		  $consulta_Paquete = new ajax_web_paquetes();
+
+			if(!isset($_POST['P'])) {
+				print json_encode(0);
+				return;
+			}
+
+	switch($_POST['P']) {
+		case 'RECARGA_APP1':
+					$consulta_Paquete->consultar();
+		        break;
+		case 'RECARGA_APP_New':
+					$consulta_Paquete->consultar_all();
+		        break;
+	}
+	// Fin Paquetes
+
+
 ?>

@@ -32,8 +32,8 @@
                 <div class="col-md-12 text-center">
                   <h2 class="mb-0">
                       <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h5 style="text-align: left;"><b>Amigo Sin Límite Telcel</b>
-                        <i class="fa fa-down pull-right mdi mdi-arrow-down-drop-circle"></i></h5>
+                        <h3 style="text-align: left;"><b>Amigo Sin Límite Telcel</b>
+                        <i class="fa fa-down pull-right mdi mdi-arrow-down-drop-circle"></i></h3>
                       </a>
                   </h2>
                 </div>
@@ -102,20 +102,20 @@
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\SL200.jpg" class="card-img-top" alt="Card image cap">
-                                  <a id="paq200" data-toggle="modal" data-target="#modalMontomx" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
+                                  <a id="paq200" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\SL300.jpg" class="card-img-top" alt="Responsive image">
-                                  <a id="paq300" data-toggle="modal" data-target="#modalMontomx" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
+                                  <a id="paq300" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
                                 </div>
                               </div>                             <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\SL500.jpg" class="card-img-top" alt="Responsive image">
-                                  <a id="paq500" data-toggle="modal" data-target="#modalMontomx" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
+                                  <a id="paq500" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
@@ -134,8 +134,8 @@
                 <div class="col-md-12 text-center">
                     <h2 class="mb-0">
                       <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <h5 style="text-align: left;"><b>Internet Telcel</b>
-                        <i class="fa fa-down pull-right mdi mdi-arrow-down-drop-circle"></i></h5>
+                        <h3 style="text-align: left;"><b>Internet Telcel</b>
+                        <i class="fa fa-down pull-right mdi mdi-arrow-down-drop-circle"></i></h3>
                       </a>
                     </h2>
                 </div>
@@ -151,27 +151,21 @@
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\Int20.jpg" class="card-img-top" alt="Responsive image">
-                                    <a>
-                                      <div data-toggle="modal" data-target="#ModalInt20" data-whatever="@mdo"  class="mask rgba-white-slight at mo"></div>
-                                    </a>
+                                  <a id="int20" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                    
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
-                                  <img src="ayuda\sites\statics\css\images\Int80.jpg" class="card-img-top" alt="Responsive image">
-                                  <a>
-                                    <div data-toggle="modal" data-target="#ModalInt80" data-whatever="@mdo"  class="mask rgba-white-slight"></div>
-                                  </a>
+                                  <img src="ayuda\sites\statics\css\images\Int30.jpg" class="card-img-top" alt="Responsive image">
+                                  <a id="int30" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
-                                  <img src="ayuda\sites\statics\css\images\Int200.jpg" class="card-img-top" alt="Responsive image">
-                                  <a>
-                                    <div data-toggle="modal" data-target="#ModalInt200" data-whatever="@mdo"  class="mask rgba-white-slight"></div>
-                                  </a>
+                                  <img src="ayuda\sites\statics\css\images\Int50.jpg" class="card-img-top" alt="Responsive image">
+                                  <a id="int50" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
@@ -181,28 +175,22 @@
                             <div class="col-11 card-group">
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
-                                  <img src="ayuda\sites\statics\css\images\Int30.jpg" class="card-img-top" alt="Responsive image">
-                                  <a>
-                                    <div data-toggle="modal" data-target="#ModalInt30" data-whatever="@mdo"  class="mask rgba-white-slight"></div>
-                                  </a>
+                                  <img src="ayuda\sites\statics\css\images\Int80.jpg" class="card-img-top" alt="Responsive image">
+                                  <a id="int80" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\Int100.jpg" class="card-img-top" alt="Responsive image">
-                                  <a>
-                                    <div data-toggle="modal" data-target="#ModalInt100" data-whatever="@mdo"  class="mask rgba-white-slight"></div>
-                                  </a>
+                                  <a id="int100" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
-                                  <img src="ayuda\sites\statics\css\images\Int300.jpg" class="card-img-top" alt="Responsive image">
-                                  <a>
-                                    <div data-toggle="modal" data-target="#ModalInt300" data-whatever="@mdo"  class="mask rgba-white-slight"></div>
-                                  </a>
+                                  <img src="ayuda\sites\statics\css\images\Int150.jpg" class="card-img-top" alt="Responsive image">
+                                  <a id="int150" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
@@ -212,28 +200,22 @@
                             <div class="col-11 card-group">
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
-                                  <img src="ayuda\sites\statics\css\images\Int50.jpg" class="card-img-top" alt="Responsive image">
-                                  <a>
-                                    <div data-toggle="modal" data-target="#ModalInt50" data-whatever="@mdo"  class="mask rgba-white-slight"></div>
-                                  </a>
+                                  <img src="ayuda\sites\statics\css\images\Int200.jpg" class="card-img-top" alt="Responsive image">
+                                  <a id="int200" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
-                                  <img src="ayuda\sites\statics\css\images\Int150.jpg" class="card-img-top" alt="Responsive image">
-                                  <a>
-                                    <div data-toggle="modal" data-target="#ModalInt150" data-whatever="@mdo"  class="mask rgba-white-slight"></div>
-                                  </a>
+                                  <img src="ayuda\sites\statics\css\images\Int300.jpg" class="card-img-top" alt="Responsive image">
+                                  <a id="int300" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\Int500.jpg" class="card-img-top" alt="Responsive image">
-                                  <a>
-                                    <div data-toggle="modal" data-target="#ModalInt500" data-whatever="@mdo"  class="mask rgba-white-slight"></div>
-                                  </a>
+                                  <a id="int500" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
@@ -252,7 +234,7 @@
       </div>
   </div>
   </center>
-
+    <!------------------Modal Proceso de Recarga-------------------------------->
       <div class="modal fade" id="modalPaquetes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-md" role="document">
           <div class="modal-content">
@@ -266,50 +248,27 @@
               <input name="vigencia" id="vigencia" style="display: none" disabled>
               <input name="mb" id="mb" style="display: none" disabled>
               <input name="mont" id="mont"  style="display: none" disabled>
+              <input name="c" id="c" value="1"  style="display: none" disabled>
+              <input name="codigo" id="codigo" style="display: none" disabled>
               <form id="formpaq" method="post">
                 <div id="idpaq" class="form-group">
-                  <h2 id="lblpaq" class="col-form-label font-weight-bold">Número Telefónico:</h2>
-                  <input type="tel" class="form-control required number" id="inpPaq" name="inpPaq" pattern="[0-9]{10}" onKeyPress="if(this.value.length==10) return false;" placeholder="Número" autofocus="focus" style="font-size: 43px; text-align: center; font-weight: bold;">
+                  <h6 id="lblpaq" class="col-form-label font-weight-bold" style="font-size: 25px">Número Telefónico:</h6>
+                  <input type="tel" class="form-control required number" id="inpPaq" name="inpPaq" pattern="[0-9]{10}" onKeyPress="if(this.value.length==10) return false;" placeholder="Número" autofocus="focus" style="font-size: 43px; text-align: center; font-weight: bold;"><br/>
+                  <label id="lblpaqC"></label>
+                  <input id="inpPaqCmx">
                 </div>
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" id="clos" name="clos" data-dismiss="modal">Cerrar</button>
-              <button type="submit" id="ok" name="ok" class="btn btn-primary" data-target="#modalConfPagoRecarga" data-toggle="modal" data-dismiss="modal" disabled>Ok</button>
+              <button type="submit" id="ok" name="ok" class="btn btn-primary" data-target="#modalConfPagoRecarga" data-toggle="modal" data-dismiss="modal" disabled>Confirmar</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="modalMontomx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md" role="document">
-          <div class="modal-content">
-            <div class="modal-header blue-gradient">
-              <h3 class="col-12 modal-title text-center font-weight-bold text-white" id="titleModal"></h3>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body" id="modal-body">
-              <input name="vigenciamx" id="vigenciamx" style="display: none" disabled>
-              <input name="mbmx" id="mbmx" style="display: none" disabled>
-              <input name="montmx" id="montmx"  style="display: none" disabled>
-              <form id="formpaqmx" method="post">
-                <div class="form-group">
-                  <label for="recipient-name" id="lblpaqmx" class="col-form-label">Número Telefónico:</label>
-                  <input type="tel" class="form-control required number" id="inpPaqmx" name="inpPaqmx" pattern="[0-9]{10}" onKeyPress="if(this.value.length==10) return false;" placeholder="Número" style="font-size: 43px; text-align: center; font-weight: bold;" autofocus></br>
-                  <label for="recipient-name" id="lblpaqC" class="col-form-label">Confirme Número Telefónico:</label>
-                  <input type="tel" class="form-control required number" id="inpPaqCmx" name="inpPaqCmx" pattern="[0-9]{10}" onKeyPress="if(this.value.length==10) return false;" placeholder="Número" style="font-size: 43px; text-align: center; font-weight: bold;" autofocus>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" id="closm" name="closm" data-dismiss="modal">Cerrar</button>
-              <button type="submit" id="save" name="save" class="btn btn-primary" data-target="#modalConfPagoRecargaMax" data-toggle="modal" data-dismiss="modal" disabled>Ok</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!------------------FIn Modal Proceso de Recarga-------------------------------->
 
+      <!------------------Modal Conifirmacion de Recarga-------------------------------->      
       <div class="modal fade" id="modalConfPagoRecarga" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="max-height: 800px;overflow-y: auto;">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -328,6 +287,8 @@
                     <h1><label id="lblvigencia"></label></h1>
                     <h5><em><b>MB:</b></em></h5>
                     <h1><label id="lblmb"></label></h1></br>
+                    <h1><label id="lblc" style="display: none;" disabled></label></h1>
+                    <h1><label id="lblcodigo" style="display: none;" disabled></label></h1>
                     <h3 style="color:#1565c0;text-align:center;"><b>¿DESEA CONTINUAR?<b></h3>
                   </center>
                 <!--/div-->
@@ -335,41 +296,13 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-target="#modalPaquetes" data-toggle="modal" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary" onclick="myFunction()" id="conf" name="conf" data-dismiss="modal">Confirmar</button>
+              <button type="button" class="btn btn-primary" onclick="myFunction()" id="conf" name="conf" data-dismiss="modal">Procesar</button>
             </div>
           </div>
         </div>
-      </div>
-      <div class="modal fade" id="modalConfPagoRecargaMax" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="max-height: 800px;overflow-y: auto;">
-        <div class="modal-dialog modal-notify" role="document">
-          <div class="modal-content">
-            <div class="modal-header head">
-              <h3 class="col-12 modal-title text-center font-weight-bold text-white" id="ModalLongTitle"><b>CONFIRMACIÓN DE RECARGA</b></h3>
-            </div>
-            <div class="modal-body" >
-              <div class="row-justify-content-center">
-                <div class="col-12 col-md-12">
-                  <center>
-                    <h5><em><b>SE REALIZARÁ UNA RECARGA AL NÚMERO:</b></em></h5>
-                    <h1><b><label id="lblnumeroMx"></label></b></h1>
-                    <h5><em><b>POR LA CANTIDAD DE:</b></em></h5>
-                    <h1>$<label id="lblmonto2Mx"></label></h1>
-                    <h5><em><b>VIGENCIA:</b></em></h5>
-                    <h1><label id="lblvigenciaMx"></label></h1>
-                    <h5><em><b>MB:</b></em></h5>
-                    <h1><label id="lblmbMx"></label></h1></br>
-                    <h3 style="color:#1565c0; text-align:center;"><b>¿DESEA CONTINUAR?<b></h3>
-                  </center>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-target="#modalMontomx" data-toggle="modal" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary" onclick="myFunction()" id="confmx" name="confmx" data-dismiss="modal">Confirmar</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div> 
+
+      <!------------------Fin Modal Confirmacion de Recarga-------------------------------->     
     <!--Styles -->
     <style>
       .card-header .fa {
