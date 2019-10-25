@@ -5,11 +5,8 @@
 	include_once("../model/MiCuenta.php");
 	include_once("../model/Login.php");
 	include_once("../model/Recarga.php");
-<<<<<<< HEAD
 	include_once("../model/Paquetes.php");
-=======
 	include_once("../model/Depositos.php");
->>>>>>> de208f736430d5a0593ff63b8fbffa47e44a62e2
 /**
  *
  */
@@ -231,7 +228,6 @@
 		        break;
 	}
 	// Fin Recargas
-<<<<<<< HEAD
 
 	//****
 	//****
@@ -268,8 +264,6 @@
 		        break;
 	}
 	// Fin Paquetes
-
-=======
 	//****
 	//****
 	//Login
@@ -300,6 +294,5 @@
 
 	//****
 	//****
->>>>>>> de208f736430d5a0593ff63b8fbffa47e44a62e2
 
 ?>
