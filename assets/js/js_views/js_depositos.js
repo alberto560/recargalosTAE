@@ -149,3 +149,33 @@ $(function() {
         $('#info').show(300);
       }
     }
+
+
+    $("#solicitar_factura").click(function() {
+      get_fact();
+    });
+
+    function get_fact() {
+      $('#indicator').show();
+
+      $.post('controller/Ajax_Web.php',
+        {
+          P: 'REPORTES',
+          F: 'Rfcs'
+        },
+        function(data, textStatus) {          
+          dontChecked(data);
+          $('#indicator').hide();
+        },
+        "json"
+      );
+    }
+
+    function dontChecked(jsonData) {    
+      var test = jsonData.Rfcs[0];
+      if (test == 0) {
+       // $( "solicitar_factura:not(:checked)");          
+       console.log("si entro");
+      $("#solicitar_factura").prop('checked', false); 
+      }
+    }
