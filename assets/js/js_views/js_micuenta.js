@@ -30,6 +30,12 @@ $(function(){
   });
 });
 
+$(function(){
+  $('#guardar').click(function(){
+    get_passwd();
+  });
+});
+
 function myFunction(){
   Swal.mixin({
   input: 'password',
@@ -53,6 +59,24 @@ function myFunction(){
     })
   }
   })
+}
+
+function myFunction1() {
+  Swal.fire({
+  type: 'error',
+  title: '!Contraseña no valida!',
+  width: 600,
+  padding: '6em',
+  background: '#fff',
+  backdrop: `
+    rgba(0, 136, 255, 0.58)
+    center left
+    no-repeat
+  `,
+  showConfirmButton: false,
+  timer: 3000
+
+})
 }
 
 
@@ -209,3 +233,67 @@ var nam;
     //$("#ModalSaldoTitle").html(title);
 
   }
+  function get_wml() {
+
+    $('#proces3').show();
+
+    $.post('controller/Ajax_Web.php',
+      {
+        P: 'WAP_FUNCTIONS'
+      },
+      function(data, textStatus) {
+        renderwml(data);
+        $('#proces3').hide();
+      },
+      "json"
+    );
+  }
+  function renderwml(jsonData) {
+
+    var estad;
+    var link;
+
+          $.each(jsonData, function (i, member) {
+            estad = member[0];
+          });
+          console.log(estad);
+
+          $.each(jsonData, function (i, member) {
+            link = member[1];
+          });
+          console.log(link);
+        //$("#ModalSaldoTitle").html(title);
+
+
+    }
+
+
+
+  function get_passwd(element) {
+      var pwd1 = $('#newpwd').val();
+      var pwd2 = $('#confnewpwd').val();
+
+    $('#indicator').show();
+
+    $.post('controller/Ajax_Web.php',
+      {
+        P: 'PASSWD_APP',
+        paswd:pwd1,
+        paswd1:pwd2
+      },
+      function(data, textStatus) {
+       renderPass(data);
+        $('#indicator').hide();
+      },
+      "json"
+    );
+  }
+
+  function renderPass(jsonData) {
+  var mess;
+
+        $.each(jsonData, function (i, member) {
+          mess = member[0];
+        });
+        console.log(mess);
+    }

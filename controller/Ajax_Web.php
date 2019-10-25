@@ -111,58 +111,55 @@
 
 	//****
 	//****
-	//Mi cuenta
-	class ajax_web_cuenta
-	{
-	private $model;
-		function __construct()
+	//MiCuenta
+		class ajax_web_cuenta
 		{
-				$this->model = new MiCuenta();
-		}
-		public function consulta_datos(){
-		 $consultac= $this->model->get_datos();
-	   	 echo $consultac;
-		}
-	}
-	$consulta_cuenta= new ajax_web_cuenta();
-
-	if(!isset($_POST['P'])) {
-		print json_encode(0);
-		return;
-	}
-
-	switch($_POST['P']) {
-		case 'USUARIO_FORM':
-      		$consulta_cuenta->consulta_datos();
-		break;
-	}
-
-	//Consulta Operadores
-	class ajax_web_cuenta1
-	{
 		private $model;
-		function __construct()
-		{
-			$this->model = new MiCuenta();
+			function __construct()
+			{
+					$this->model = new MiCuenta();
+			}
+			public function consulta_datos(){
+			 $consultac= $this->model->get_datos();
+		   	 echo $consultac;
+			}
+
+			public function consulta_op(){
+			 $consultao= $this->model->get_operador();
+		   	 echo $consultao;
+			}
+
+			public function consulta_pws(){
+			 $consultap= $this->model->get_passwd();
+		   	 echo $consultap;
+			}
 		}
-		public function consulta_op(){
-		 $consultao= $this->model->get_operador();
-	   	 echo $consultao;
+		$consulta_cuenta= new ajax_web_cuenta();
+		$consulta_oper= new ajax_web_cuenta();
+		$consulta_pass= new ajax_web_cuenta();
+
+		if(!isset($_POST['P'])) {
+			print json_encode(0);
+			return;
 		}
-	}
-	$consulta_operador= new ajax_web_cuenta1();
 
-	if(!isset($_POST['P'])) {
-		print json_encode(0);
-		return;
-	}
+		switch($_POST['P']) {
+			case 'USUARIO_FORM':
+	      		$consulta_cuenta->consulta_datos();
+			break;
+		}
 
-	switch($_POST['P']) {
-		case 'OPERADORES_TBL':
-      		$consulta_operador->consulta_op();
-		break;
-	}
+		switch ($_POST['P']) {
+			case 'OPERADORES_TBL':
+				$consulta_oper->consulta_op();
+				break;
+		}
 
+		switch($_POST['P']) {
+			case 'PASSWD_APP':
+	      		$consulta_pass->consulta_pws();
+			break;
+		}
 	//****
 
 	//****
@@ -321,7 +318,7 @@
 					}
 			break;
 		}
-	
+
 
 	//****
 	//****

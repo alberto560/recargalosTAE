@@ -57,22 +57,19 @@
                         </br><center><h4><b>Cambiar Contraseña</b></h4></center></br>
                         <div class="col-12 flex-center">
                             <form id="checkpwd">
-                              <div class="md-form" style="text-align: left;">
-                                <i class="mdi mdi-lock prefix"></i>
+                              <div class="" style="text-align: left;">
+                                <i class="mdi mdi-lock prefix fa fa-2x"></i><label for="pwdA">Contraseña Actual</label>
                                 <input type="password" id="pwdA" name="pwdA" class="form-control validate" autofocus>
-                                <label for="pwdA">Contraseña Actual</label>
-                              </div>
-                              <div class="md-form" style="text-align: left;">
-                                <i class="mdi mdi-lock prefix"></i>
+                              </div><br/>
+                              <div class="" style="text-align: left;">
+                                <i class="mdi mdi-lock prefix fa fa-2x"></i><label for="newpsw">Nueva Contraseña</label>
                                 <input type="password" id="newpsw" name="newpsw" class="form-control validate">
-                                <label for="newpsw">Nueva Contraseña</label>
-                              </div>
-                              <div class="md-form" style="text-align: left;">
-                                <i class="mdi mdi-lock prefix"></i>
+                              </div></br>
+                              <div class="" style="text-align: left;">
+                                <i class="mdi mdi-lock prefix fa fa-2x"></i><label for="confnewpwd">Confirme Contraseña</label>
                                 <input type="password" id="confnewpwd" name="confnewpwd" class="form-control validate">
-                                <label for="confnewpwd">Confirme Contraseña</label>
-                              </div>
-                            <button type="button" id="guardar" class="btn btn-success">Cambiar Contraseña</button>
+                              </div></br>
+                            <button id="guardar" name="guardar" class="btn btn-primary" onclick="myFunction1()">Cambiar Contraseña</button>
                             </form>
                         </div>
                       </div>
@@ -137,7 +134,7 @@
                                 <input type="text" class="form-control" id="inputEmail">
                               </div>
                             </div>
-                            <center><button type="button" id="save" class="btn btn-success">Guardar Cambios</button></center>
+                            <center><button type="button" id="save" class="btn btn-primary">Guardar Cambios</button></center>
                           </form>
                         </div>
                       </div>
