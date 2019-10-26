@@ -2,7 +2,7 @@
 class Recarga {
   function get_Compania()
   {
-    $sentencia1 = array('RECARGA_APP' => array( array('! Formato de Telefono invalido !'), array('T','0') ));
+    $sentencia1 = array('Mensaje' => array('! Formato de Telefono invalido !'));
     return json_encode($sentencia1);
   }
   /*{
