@@ -8,7 +8,7 @@
       return json_encode($sentencia1);
     }
     function get_All1(){
-      $sentencia1 = array('TB_Estado' => array( array('0','NO SE ENCONTRARON REGISTROS EN ESTA FECHA'), array('T','0') ));
+      $sentencia1 = array('TB_Edocta' => array( array('0','NO SE ENCONTRARON REGISTROS EN ESTA FECHA'), array('T','0','0') ));
       return json_encode($sentencia1);
     }
   }
