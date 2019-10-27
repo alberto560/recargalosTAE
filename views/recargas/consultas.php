@@ -9,10 +9,11 @@
       <script type="text/javascript" src="assets/js/js_views/js_consultas.js"></script>
       <script type="text/javascript" src="assets/bootstrap/js/bootstrap-clockpicker.min.js"></script>
       <script type="text/javascript" src="assets/bootstrap/js/bootstrap-datetimepicker.js"></script>
+      <script type="text/javascript" src="assets/js/util/stacktable.js"></script>
 
       <!--CSS-->
       <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-4-3-1.min.css">
-
+      <link rel="stylesheet" href="assets/css/stacktable.css">
       <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap-clockpicker.min.css" >
       <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap-datetimepicker.min.css" >
       <!-- Material Design Bootstrap -->
@@ -86,7 +87,7 @@
 
                       <br>
                       <div class="row justify-content-md-center">
-                        <div id="contenedorConsulta" class="table-responsive col-12 col-md-10 ">
+                        <div id="contenedorConsulta" class="tablecol-12 col-md-10 ">
 
                         </div>
                       </div>
@@ -244,6 +245,9 @@
             minView: 2,
             forceParse: 0
         });
+      </script>
+      <script type="text/javascript">
+        $('table').stacktable();
       </script>
 
 

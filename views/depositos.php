@@ -52,13 +52,13 @@
 
       <div class="row ">
         <div class="col-12 col-md-6 grid-margin stretch-card column">
-          <div class="card-resp">
+          <div class="card-bord">
             <div class="card-body" >
               <div class="col-12 col-md-12">
                 <div class="list-group"  id="list-tab" role="tablist">
-                  </p>                 
-                  </p>                 
-                  </p>                 
+                  </p>
+                  </p>
+                  </p>
                   <a class="list-group-item list-group-item-action active" id="list-CBancarias-list" data-toggle="list" href="#list-CBancarias"
                       role="tab" aria-controls="CBancarias" data-step="3" data-intro="Muestra las Cuentas bancarias para Depositos Recargalos TAE y Depositos Pago de Servicios <img src='ayuda/sites/statics/css/images/img/ayu-cban.png' width='100%' />">
                       <i class=" mdi mdi-bank mr-lg-4 mr-xl-4 "></i>Cuentas Bancarias
@@ -75,16 +75,16 @@
                       role="tab" aria-controls="CRealizadas" data-step="6" data-intro="Se puede buscar las compras realizadas ingresando la fecha. <div id='carousel-example-1z' class='carousel slide carousel-fade' data-ride='carousel'><ol class='carousel-indicators'><li data-target='#carousel-example-1z' data-slide-to='0' class='active'></li><li data-target='#carousel-example-1z' data-slide-to='1'></li></ol><div class='carousel-inner' role='listbox'><div class='carousel-item active'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-crea.png' alt='First slide'></div><div class='carousel-item'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-fi.png' alt='Second slide'></div><div class='carousel-item'><img class='d-block w-100' src='ayuda/sites/statics/css/images/img/ayu-ff.png' alt='Third slide'></div></div><a class='carousel-control-prev' href='#carousel-example-1z' role='button' data-slide='prev'><span class='fas fa-angle-left blue' aria-hidden='true'></span><span class='sr-only'>Previous</span></a><a class='carousel-control-next' href='#carousel-example-1z' role='button' data-slide='next'><span class='fas fa-angle-right blue' aria-hidden='true'></span><span class='sr-only'>Next</span></a></div>">
                       <i class="mdi mdi-cart-outline mr-lg-4 mr-xl-4 "></i>Compras Realizadas
                   </a>
-                  </p>                 
-                  </p>                 
-                  </p> 
+                  </p>
+                  </p>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-6 grid-margin stretch-card">
-          <div class="card-resp">
+          <div class="card-bord">
             <div class="card-body">
               <div class="col-12">
                 <div class="tab-content" id="nav-tabContent">
@@ -299,7 +299,7 @@
                             <input type="checkbox" class="custom-control-input" id="solicitar_facturaCT" name="solicitar_facturaCT">
                             <label class="custom-control-label" for="solicitar_facturaCT">Solicitar Factura</label>
                           </div>
-                        </div>                        
+                        </div>
                       </div>
                       <br>
                       <div class="row justify-content-between">
@@ -478,9 +478,9 @@
                   <input type="checkbox" class="custom-control-input" id="adjuntar_imagen">
                   <label class="custom-control-label" for="adjuntar_imagen">Adjuntar imágen</label>
                 </div>
-              </div>              
+              </div>
             </div>
-            <div class="row justify-content-center">                
+            <div class="row justify-content-center">
                 <div id="indicator" style="display: none; text-align: center;" class="loading_img">
                   <img src="assets/images/indicator.gif"/>
                 </div>

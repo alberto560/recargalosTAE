@@ -43,8 +43,8 @@
     <nav class="navbar col-lg-12 col-12 p-0  fixed-top d-flex flex-row ">
         <div class="navbar-brand-wrapper d-flex justify-content-center info-color-dark z-depth-1" style="border-color:#0099CC">
           <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
-              <a id="logoAdd" class="navbar-brand brand-logo imagearea" href="home.php"><img id="logoHome" /></a>
-              <a id="logoAdd_resp" class="navbar-brand brand-logo-mini imagearea" href="home.php"><img id="logoHome_resp" /></a>
+              <a id="logoAdd" class="navbar-brand brand-logo imagearea"><img id="logoHome" /></a>
+              <a id="logoAdd_resp" class="navbar-brand brand-logo-mini imagearea"><img id="logoHome_resp" /></a>
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
                <span class="mdi mdi-sort-variant text-white"></span>
             </button>
@@ -624,6 +624,10 @@
   <script type="text/javascript" src="app.js"></script-->
   <script type="text/javascript">
     $('#return_home').click(function(){
+      redirect();
+    })
+
+    $('#logoAdd').click(function(){
       redirect();
     })
 

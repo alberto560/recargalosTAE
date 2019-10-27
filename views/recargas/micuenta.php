@@ -69,7 +69,7 @@
                                 <i class="mdi mdi-lock prefix fa fa-2x"></i><label for="confnewpwd">Confirme Contraseña</label>
                                 <input type="password" id="confnewpwd" name="confnewpwd" class="form-control validate">
                               </div></br>
-                            <button id="guardar" name="guardar" class="btn btn-primary" onclick="myFunction1()">Cambiar Contraseña</button>
+                            <button type="button" id="guardar" name="guardar" class="btn btn-primary" onclick="myFunction1()">Cambiar Contraseña</button>
                             </form>
                         </div>
                       </div>
