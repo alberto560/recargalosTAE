@@ -151,21 +151,21 @@
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\Int20.jpg" class="card-img-top" alt="Responsive image">
-                                  <a id="int20" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                    
+                                  <a id="int20" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\Int30.jpg" class="card-img-top" alt="Responsive image">
-                                  <a id="int30" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
+                                  <a id="int30" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\Int50.jpg" class="card-img-top" alt="Responsive image">
-                                  <a id="int50" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
+                                  <a id="int50" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
@@ -176,21 +176,21 @@
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\Int80.jpg" class="card-img-top" alt="Responsive image">
-                                  <a id="int80" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
+                                  <a id="int80" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\Int100.jpg" class="card-img-top" alt="Responsive image">
-                                  <a id="int100" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
+                                  <a id="int100" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\Int150.jpg" class="card-img-top" alt="Responsive image">
-                                  <a id="int150" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
+                                  <a id="int150" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
@@ -201,21 +201,21 @@
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\Int200.jpg" class="card-img-top" alt="Responsive image">
-                                  <a id="int200" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
+                                  <a id="int200" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\Int300.jpg" class="card-img-top" alt="Responsive image">
-                                  <a id="int300" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
+                                  <a id="int300" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
                               <div class="card" style="border-radius: 10px 10px 10px 10px">
                                 <div class="view overlay zoom tel">
                                   <img src="ayuda\sites\statics\css\images\Int500.jpg" class="card-img-top" alt="Responsive image">
-                                  <a id="int500" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>                                  
+                                  <a id="int500" data-toggle="modal" data-target="#modalPaquetes" data-whatever="@mdo"  class="mask rgba-white-slight"></a>
                                 </div>
                               </div>
                               <p>&emsp;&emsp;</p>
@@ -268,7 +268,7 @@
       </div>
       <!------------------FIn Modal Proceso de Recarga-------------------------------->
 
-      <!------------------Modal Conifirmacion de Recarga-------------------------------->      
+      <!------------------Modal Conifirmacion de Recarga-------------------------------->
       <div class="modal fade" id="modalConfPagoRecarga" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="max-height: 800px;overflow-y: auto;">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -295,14 +295,14 @@
               <!--/div-->
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-target="#modalPaquetes" data-toggle="modal" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-danger" data-target="#modalPaquetes" data-toggle="modal" data-dismiss="modal">Corregir</button>
               <button type="button" class="btn btn-primary" onclick="myFunction()" id="conf" name="conf" data-dismiss="modal">Procesar</button>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
 
-      <!------------------Fin Modal Confirmacion de Recarga-------------------------------->     
+      <!------------------Fin Modal Confirmacion de Recarga-------------------------------->
     <!--Styles -->
     <style>
       .card-header .fa {
