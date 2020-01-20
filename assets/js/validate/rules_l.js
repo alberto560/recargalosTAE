@@ -228,6 +228,8 @@ function validate_tel(form,btnEnable){
               $(inpPaqCmx).css('background', '#ffffff');
           }
      });
+
+     /*Funcion activar o deshabilitar boton confirmar*/
      $(form).bind('change keyup', function() {
         if($(this).validate().checkForm()) {
             $(btnEnable).attr('disabled', false);

@@ -1,3 +1,4 @@
+/* Funcion validar campos numeros */
 $(function() {
   jQuery.validator.messages.required = 'Esta campo es obligatorio.';
   jQuery.validator.messages.number = 'Esta campo debe ser num&eacute;rico.';
@@ -5,6 +6,7 @@ $(function() {
   jQuery.validator.messages.minlength = '10 caracteres.';
   validate_tel("#formpaq","#ok");
 });
+
 $(function() {
   jQuery.validator.messages.required = 'Esta campo es obligatorio.';
   jQuery.validator.messages.number = 'Esta campo debe ser num&eacute;rico.';
@@ -13,6 +15,9 @@ $(function() {
   validate_telmx("#formpaqmx","#save");
 });
 
+
+
+/**/
 $(function(btnEnable) {
   $(btnEnable).click(function() {
     var num =[$("#inpPaq").val()];
